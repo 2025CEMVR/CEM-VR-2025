@@ -1,0 +1,1548 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Documents/Github/CEM-VR-Final/Unity Project/Giroux-CAP6117-SANC - crown
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55398
+Successfully changed project path to: D:/Documents/Github/CEM-VR-Final/Unity Project/Giroux-CAP6117-SANC - crown
+D:/Documents/Github/CEM-VR-Final/Unity Project/Giroux-CAP6117-SANC - crown
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 116.85 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 1.01 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Documents/Github/CEM-VR-Final/Unity Project/Giroux-CAP6117-SANC - crown/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   NVIDIA
+    VRAM:     5981 MB
+    Driver:   31.0.15.4601
+Initialize mono
+Mono path[0] = 'C:/Program Files/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004496 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 101.14 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.780 seconds
+Domain Reload Profiling:
+	ReloadAssembly (780ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (565ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (56ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006898 seconds.
+Android Extension - Scanning For ADB Devices 688 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Documents\Github\CEM-VR-Final\Unity Project\Giroux-CAP6117-SANC - crown\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Documents\Github\CEM-VR-Final\Unity Project\Giroux-CAP6117-SANC - crown\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 107.46 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in D:\Documents\Github\CEM-VR-Final\Unity Project\Giroux-CAP6117-SANC - crown\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Documents\Github\CEM-VR-Final\Unity Project\Giroux-CAP6117-SANC - crown\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c2a97e0383e8404c9fc0ae19d58f57f1>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <c2a97e0383e8404c9fc0ae19d58f57f1>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <c2a97e0383e8404c9fc0ae19d58f57f1>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <5f40cdb07bd44d76a23dad985a4ec283>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.478 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1478ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1231ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (320ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (678ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (388ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 4380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (1.5 MB). Loaded Objects now: 4836.
+Memory consumption went from 177.3 MB to 175.8 MB.
+Total: 4.105600 ms (FindLiveObjects: 0.315800 ms CreateObjectMapping: 0.256400 ms MarkObjects: 3.230600 ms  DeleteObjects: 0.301900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 251870.763811 seconds.
+  path: Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_4.obj
+  artifactKey: Guid(9ae3bbb49c717ce489e8c38635f871d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_4.obj using Guid(9ae3bbb49c717ce489e8c38635f871d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f83c7f12354cc326b36967b342cd164') in 0.641790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Personal Headstones/PB-429-F.obj
+  artifactKey: Guid(bbadbda4df4c1e84a9ada952c46e3849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-429-F.obj using Guid(bbadbda4df4c1e84a9ada952c46e3849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8de7175d899e14fa9a5999aa8025e3f') in 0.048684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_1.fbx
+  artifactKey: Guid(a58150e80c5d6c34f9886a3074a99ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_1.fbx using Guid(a58150e80c5d6c34f9886a3074a99ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6dce1eaff98cd285cc3cff631f5f3a') in 0.350743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Gates/ironFenceSection.obj
+  artifactKey: Guid(0e43a68a13b287742ab463e7e9f31c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/ironFenceSection.obj using Guid(0e43a68a13b287742ab463e7e9f31c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054f74ed3c20f8a9fa9af71f357a8443') in 0.059701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Prefabs/Walls/SmallFencePiece Final.prefab
+  artifactKey: Guid(bbc176671c8584d40bb34fe4314318d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/SmallFencePiece Final.prefab using Guid(bbc176671c8584d40bb34fe4314318d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ee1d7b48ec73cb150e527b691b2870') in 0.051362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Walls/wallSegmentFinal.prefab
+  artifactKey: Guid(66abab4214a9bb2439a1e57f8c40905c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallSegmentFinal.prefab using Guid(66abab4214a9bb2439a1e57f8c40905c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d156fd34a8a74d0b7db52ce9c2f7161') in 0.018058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/VR Hands/Models/r_hand_skeletal_lowres.fbx
+  artifactKey: Guid(d0c255d07fd68f14b94e55d388e7e6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Models/r_hand_skeletal_lowres.fbx using Guid(d0c255d07fd68f14b94e55d388e7e6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a597589717bef52bb0f212d75e9ad4a') in 0.108928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Personal Headstones/PA-244-F.obj
+  artifactKey: Guid(7afabb7970989ba43b34a0ad867c58be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-244-F.obj using Guid(7afabb7970989ba43b34a0ad867c58be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a568db62874a8ada67596ea51319e28a') in 0.041033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/Coins/Coin_USSR_3_Kopeyki_1924.prefab
+  artifactKey: Guid(b6f2da6ecb2a9fe46b2b732f433cf0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Coins/Coin_USSR_3_Kopeyki_1924.prefab using Guid(b6f2da6ecb2a9fe46b2b732f433cf0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c89b47ad2bce127e798a7a6d233689e') in 0.286559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/LOD Headstones/PA-244-F.fbx
+  artifactKey: Guid(a24dc5549c1736f4d915c11eefa785e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-244-F.fbx using Guid(a24dc5549c1736f4d915c11eefa785e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3a91ac2434b5342cd7a66193419ed3') in 0.063799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_06.prefab
+  artifactKey: Guid(a649302f8407dd9469e2c5b67b4a0674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_06.prefab using Guid(a649302f8407dd9469e2c5b67b4a0674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6487a2ce735e8d4136e776adbd9c0370') in 0.185295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Coins/Coin_USSR_50_Kopeek_1924.prefab
+  artifactKey: Guid(4cd3b1b4aa5ae664bb6566538bd0b869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Coins/Coin_USSR_50_Kopeek_1924.prefab using Guid(4cd3b1b4aa5ae664bb6566538bd0b869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a05c80b0fa463613647252cd3cc67f') in 0.066692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Personal Headstones/PC-67-F.obj
+  artifactKey: Guid(09e3a76098653784f970afc5ab038599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PC-67-F.obj using Guid(09e3a76098653784f970afc5ab038599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ca2c47adeaf97f07dd7c88d1bf61e7') in 0.038505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0AirForce.prefab
+  artifactKey: Guid(3e8992ecd8d680c41af2d6711d79e58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0AirForce.prefab using Guid(3e8992ecd8d680c41af2d6711d79e58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2aad9830b592b0ac8e0be2bd49550a9') in 0.094560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/LOD Headstones/PA-197-F.fbx
+  artifactKey: Guid(dafcf6dfa7269ff499530288e760fda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-197-F.fbx using Guid(dafcf6dfa7269ff499530288e760fda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212c561a64a099af012ad2a43741f77c') in 0.058843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/VR Hands/Models/RightHand.fbx
+  artifactKey: Guid(2ed8684bd2bcb9f4093db7df04b66619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Models/RightHand.fbx using Guid(2ed8684bd2bcb9f4093db7df04b66619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86acbdc71a1f9926fea79445f6a05bc7') in 0.374027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Dade Monument and Pyramids/Monument.fbx
+  artifactKey: Guid(55a2b75e93eda3d4bbe297369d7bbca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dade Monument and Pyramids/Monument.fbx using Guid(55a2b75e93eda3d4bbe297369d7bbca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93b9449378bb9f101ba8aa3874aa86a') in 0.187173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/VR Hands/Prefabs/LeftHand.prefab
+  artifactKey: Guid(927232924abbe7749aba0b85a30aa1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Prefabs/LeftHand.prefab using Guid(927232924abbe7749aba0b85a30aa1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0b75d2a99b27a6c30ad5de0af1a4ba') in 0.225779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Objects/Coins/penny.prefab
+  artifactKey: Guid(eddbd739e9f04224c80947417cae6733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Coins/penny.prefab using Guid(eddbd739e9f04224c80947417cae6733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde3c24f57cb6e31a5f4904a3b1ed051') in 0.122505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rocks/Rock_05.prefab
+  artifactKey: Guid(0e53066107b6622419f6c744a9239429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_05.prefab using Guid(0e53066107b6622419f6c744a9239429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705e1e80b43c79426dd9d9d05b1b8862') in 0.082145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/Personal Headstones/PA-127-F.obj
+  artifactKey: Guid(c6af6fb08958f1e4f9c851fa724a68de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-127-F.obj using Guid(c6af6fb08958f1e4f9c851fa724a68de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711d2aef211089ee39e31ec032bfdb3a') in 0.043363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Hedges/Resourced_boxwood hedge FBX.FBX
+  artifactKey: Guid(19d9ee6c2a11c8545b826e2d33f04b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Hedges/Resourced_boxwood hedge FBX.FBX using Guid(19d9ee6c2a11c8545b826e2d33f04b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c845204b6fed694a78788ca99fc4fa53') in 1.651911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Objects/Coins/dime.prefab
+  artifactKey: Guid(4e88eb09e8692d1408f1ff136e93f3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Coins/dime.prefab using Guid(4e88eb09e8692d1408f1ff136e93f3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef289f9f793debb9977991753743c86') in 0.078285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/LOD Headstones/PA-86-F.fbx
+  artifactKey: Guid(6cd60d71b922a2d43b6cbbd7d107eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-86-F.fbx using Guid(6cd60d71b922a2d43b6cbbd7d107eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcabcaea31214d9b8ff4d52ba61bdfc') in 0.172936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/LOD Headstones/PA-539-F.fbx
+  artifactKey: Guid(7e9b24e612491e34296885e01a5a83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-539-F.fbx using Guid(7e9b24e612491e34296885e01a5a83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d11256cea772def8dd35fee0ecbe460') in 0.040209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Left Hand Presence.prefab
+  artifactKey: Guid(6c2509c76b281144cb0099fc45f17a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Left Hand Presence.prefab using Guid(6c2509c76b281144cb0099fc45f17a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e990e4a59a1548631b8e19f639be25') in 0.047529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Personal Headstones/PA-2-F.obj
+  artifactKey: Guid(2f1a5e3951486464584662b4105e80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-2-F.obj using Guid(2f1a5e3951486464584662b4105e80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a1fb370f1ffc0b2c6fe944a98f70ec') in 0.030965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Models/Walls/wallPostBall.obj
+  artifactKey: Guid(bdd57ae5feb3f9b4ca422cc452412319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallPostBall.obj using Guid(bdd57ae5feb3f9b4ca422cc452412319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310bc8f4cf8e6cfd0ec94bc90f0efac3') in 0.033803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/Personal Headstones/PB-338-F.obj
+  artifactKey: Guid(e9181f6d4e4be7641a6b27e3e3300a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-338-F.obj using Guid(e9181f6d4e4be7641a6b27e3e3300a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb4b3651ca131b3f222823e19d4e1a7') in 0.055518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rocks/Rock_04.prefab
+  artifactKey: Guid(30724e1118fc1d94ba6e0e5145358ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_04.prefab using Guid(30724e1118fc1d94ba6e0e5145358ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e87bf386dcf1afd79abdf6c28abfa0') in 0.084846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_03.FBX
+  artifactKey: Guid(48320e7576ce0664eb501ebbd6c815da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_03.FBX using Guid(48320e7576ce0664eb501ebbd6c815da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284accbda2806440d587225f5d1a085d') in 0.114596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Oculus Hands Physics/Animations/r_hand_fist_anim.fbx
+  artifactKey: Guid(005ab0ae8aa7f74438a5fa50f7cd50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/r_hand_fist_anim.fbx using Guid(005ab0ae8aa7f74438a5fa50f7cd50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04057d175e6868efd5a1e5f5f8d52087') in 0.017750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_2.obj
+  artifactKey: Guid(656f4596cbce20a47802f42a7919ddb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_2.obj using Guid(656f4596cbce20a47802f42a7919ddb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7713017b7dbb85093247dc2a83ebca') in 0.181455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/WE17_M.fbx
+  artifactKey: Guid(4ebcdd43bc9a41348be97eb8e95f5cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/WE17_M.fbx using Guid(4ebcdd43bc9a41348be97eb8e95f5cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a97751d20209f85c8e175d47276c9bf') in 0.253860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Signs Flag Pyramids/FlagContainer.prefab
+  artifactKey: Guid(95b0629b61d962640aff030829a0cad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Signs Flag Pyramids/FlagContainer.prefab using Guid(95b0629b61d962640aff030829a0cad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27428e2f34942cd9a128c854538b09b6') in 0.187722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Personal Headstones/PA-197-F.obj
+  artifactKey: Guid(66103401d19c757498031bdad5abff4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-197-F.obj using Guid(66103401d19c757498031bdad5abff4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b008bc7f5f16acbf49a29fbd0ded70fd') in 0.040174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Coins/dime.obj
+  artifactKey: Guid(3c092626c932fe24cbcb892ebace7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Coins/dime.obj using Guid(3c092626c932fe24cbcb892ebace7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c79ec9c282c61a56f97a3696061fb9') in 0.094485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Personal Headstones/PA-86-F.obj
+  artifactKey: Guid(8155f245145a5d3409e7deb51d5a65db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-86-F.obj using Guid(8155f245145a5d3409e7deb51d5a65db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb14510d3899d151f7a6aef7f9a20b10') in 0.042621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Walls/ironFenceSection Final.prefab
+  artifactKey: Guid(3160d4fc93124fe4f97b7634af3d75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/ironFenceSection Final.prefab using Guid(3160d4fc93124fe4f97b7634af3d75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6035d529615b06de84af12cc764691') in 0.021948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Gates/Iron No Bottom.obj
+  artifactKey: Guid(c3c46c397ffdbd648b7a987a47bc8cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/Iron No Bottom.obj using Guid(c3c46c397ffdbd648b7a987a47bc8cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cef3d8aff05cdb478e9eeafa7656c4e') in 0.097956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Personal Headstones/PA-118-F.obj
+  artifactKey: Guid(0deb425a3d91a824abf53fe97571efa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-118-F.obj using Guid(0deb425a3d91a824abf53fe97571efa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34e5ea3decb24c5fa28ae24462d555b') in 0.044476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0CoastGuard.prefab
+  artifactKey: Guid(52eb0a8531dd4d84da81e6619bc2ecaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0CoastGuard.prefab using Guid(52eb0a8531dd4d84da81e6619bc2ecaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a413adfa297c662f6f7fb4986e14eb4') in 0.074749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/LOD Headstones/PA-504-F.fbx
+  artifactKey: Guid(efa0279c182c4464d8b6fd127ed53bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-504-F.fbx using Guid(efa0279c182c4464d8b6fd127ed53bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c286e11599f17c8cb113cf754824d0') in 0.051349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_03.prefab
+  artifactKey: Guid(75fa8bf3a73ee6b4da0c7a2c6d3db6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_03.prefab using Guid(75fa8bf3a73ee6b4da0c7a2c6d3db6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e058800764bb3b15c817abc664f3416') in 0.075428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/LOD Headstones/PA-653-F.fbx
+  artifactKey: Guid(79069e1712fdc3f4d8b22947265c9876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-653-F.fbx using Guid(79069e1712fdc3f4d8b22947265c9876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87e9667a78d49074b12f658a03b571e') in 0.041689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Rostrum/stage.obj
+  artifactKey: Guid(51b4c9d921ef86d42ab6e6bbb440918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rostrum/stage.obj using Guid(51b4c9d921ef86d42ab6e6bbb440918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907de5a55ebcd96f3a39f92e7f15cb01') in 0.029989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Personal Headstones/PA-161-F.obj
+  artifactKey: Guid(b7e8d22cf403a7f45a20513f0670dd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-161-F.obj using Guid(b7e8d22cf403a7f45a20513f0670dd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61d0b3c1773f257ffcdf07589ebecbd') in 0.034153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Personal Headstones/PA-6-F.obj
+  artifactKey: Guid(6f4208fcaa71cf143b3cd7750a6bbc08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-6-F.obj using Guid(6f4208fcaa71cf143b3cd7750a6bbc08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4533dce4c882fdeafa7dace3b33331') in 0.033821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/LOD Headstones/PA-118-F.fbx
+  artifactKey: Guid(41ee15b7bf6a0a543b24cc219e80ebc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-118-F.fbx using Guid(41ee15b7bf6a0a543b24cc219e80ebc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e0537c58922a16328efa0cd915616f') in 0.053111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_5.obj
+  artifactKey: Guid(7ca3aed818c856f46af71943b346c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_5.obj using Guid(7ca3aed818c856f46af71943b346c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2e043cd3751d734b0c7bbece92a7c3') in 0.382636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/LOD Headstones/PA-462-F.fbx
+  artifactKey: Guid(1eb39cb8a66444a49a0d7050e7e6c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-462-F.fbx using Guid(1eb39cb8a66444a49a0d7050e7e6c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64024f45e436d3d8159f5cd5b477aeff') in 0.040080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/LOD Headstones/PA-427-F.fbx
+  artifactKey: Guid(30d6842852d990340963b291d39ad64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-427-F.fbx using Guid(30d6842852d990340963b291d39ad64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0cc2a54958e468bf15410fe0d95b7f') in 0.163423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rocks/Rock_03.prefab
+  artifactKey: Guid(08576a1be2ae09c42a2df8c0601f161c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_03.prefab using Guid(08576a1be2ae09c42a2df8c0601f161c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72040148903b72ef7385a8e88997d423') in 0.080987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/LOD Headstones/PA-463-F.fbx
+  artifactKey: Guid(61c4142f5041a364187c69f379e8cb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-463-F.fbx using Guid(61c4142f5041a364187c69f379e8cb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b057681b362edec7d5d4f662f33ed32') in 0.042155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Rocks/pebble.fbx
+  artifactKey: Guid(45e11b9124937474bb25fea54863e197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rocks/pebble.fbx using Guid(45e11b9124937474bb25fea54863e197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f260627cb52d38fb37da91eeebf591') in 0.056800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Personal Headstones/PA-80-F.obj
+  artifactKey: Guid(8c2e332ba29d83b4183ef92f254e4eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-80-F.obj using Guid(8c2e332ba29d83b4183ef92f254e4eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc012209f3c73980880cb5c75f3781bc') in 0.032507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Personal Headstones/PA-316-F.obj
+  artifactKey: Guid(95c34e4a687a43e4f811fe831b613c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-316-F.obj using Guid(95c34e4a687a43e4f811fe831b613c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1034cac3fea94605e328153d337f156d') in 0.037854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Driveway/driveway.obj
+  artifactKey: Guid(aa2553e5d52cd784db355a58627c79a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Driveway/driveway.obj using Guid(aa2553e5d52cd784db355a58627c79a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af5c32d923668dc0ed4a886c321c25b') in 0.031480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Personal Headstones/PB-402-F.obj
+  artifactKey: Guid(d0ba085a35815d24a8de342f67489012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-402-F.obj using Guid(d0ba085a35815d24a8de342f67489012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e88a39bac100500734f602787c5fa8') in 0.032837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/Map/Map.prefab
+  artifactKey: Guid(1622b95970dcca843b0088a022cdae5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Map/Map.prefab using Guid(1622b95970dcca843b0088a022cdae5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8dc88a9a759fa9c30b9476c28e42bb') in 0.014394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/LOD Headstones/PA-338-F.fbx
+  artifactKey: Guid(90ef9721140c7334c9a666d149115d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-338-F.fbx using Guid(90ef9721140c7334c9a666d149115d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1809df106aa29c17930d5aff8a0ff323') in 0.063673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Custom Right Hand Model with Collider.prefab
+  artifactKey: Guid(3c99d0ba506360a43b8cea08ef805d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Custom Right Hand Model with Collider.prefab using Guid(3c99d0ba506360a43b8cea08ef805d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236d72b9b66739a2cd1f1ba60b8b29e9') in 0.038133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Models/Gates/GateSmall.obj
+  artifactKey: Guid(c85d7e66111d84e4286ea5ee23ac0b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/GateSmall.obj using Guid(c85d7e66111d84e4286ea5ee23ac0b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedccb0db9fe5725008175208cfcfb66') in 0.038959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Personal Headstones/PB-504-F.obj
+  artifactKey: Guid(22138f1541f5990498c0a04971ced3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-504-F.obj using Guid(22138f1541f5990498c0a04971ced3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8039554c40f61ef1c7f931d976f90b') in 0.034991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_5.fbx
+  artifactKey: Guid(c6a2829ad30f45d4aaa1d260884eba2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_5.fbx using Guid(c6a2829ad30f45d4aaa1d260884eba2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe11b3512af5f97710b5a950086d5628') in 0.117804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Birds/sparrow_anim_fbx_Prefab.prefab
+  artifactKey: Guid(cc0ade07d4928764891892ef2bce2874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Birds/sparrow_anim_fbx_Prefab.prefab using Guid(cc0ade07d4928764891892ef2bce2874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f912c66de1127a334d421445d32c929c') in 0.140923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Prefabs/Coins/Coin_USSR_1_Rubl_1924.prefab
+  artifactKey: Guid(3b14ad2f245313349aff2c6715baee9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Coins/Coin_USSR_1_Rubl_1924.prefab using Guid(3b14ad2f245313349aff2c6715baee9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867f70248cd13868c7fb9d671c6fa58f') in 0.074149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Personal Headstones/PA-180-F.obj
+  artifactKey: Guid(45901c993e8224443b3077ac0738c9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-180-F.obj using Guid(45901c993e8224443b3077ac0738c9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077cc0deb9e8234d86049d61b3722a1a') in 0.057418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Oculus Hands Physics/Animations/r_hand_default_anim.fbx
+  artifactKey: Guid(b6c38558987444240b3b3950e4450b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/r_hand_default_anim.fbx using Guid(b6c38558987444240b3b3950e4450b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3459a7092b12407177b2c4ae51612c') in 0.033042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/LOD Headstones/PA-161-F.fbx
+  artifactKey: Guid(7aca2f86452ad1b428b8cad06c51de50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-161-F.fbx using Guid(7aca2f86452ad1b428b8cad06c51de50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11e220225b2089b0dffa9c0cae56383') in 0.090661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/LOD Headstones/PA-588-F.fbx
+  artifactKey: Guid(96b932344533442429cace22267cfe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-588-F.fbx using Guid(96b932344533442429cace22267cfe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb1cfd8ea8d8daa31bbe84ce95d52f1') in 0.047393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Models/Personal Headstones/PB-587-F.obj
+  artifactKey: Guid(ab912af0e61da5c4a922e3e86fa77d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-587-F.obj using Guid(ab912af0e61da5c4a922e3e86fa77d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f0265bc3bae47d69ba341a915aceea') in 0.038458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Birds/sparrow_anim_fbx.FBX
+  artifactKey: Guid(609e79e138c5aea498764b127026150a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Birds/sparrow_anim_fbx.FBX using Guid(609e79e138c5aea498764b127026150a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9b9684fe227705872e976449debdbf') in 0.123219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Coins/penny.obj
+  artifactKey: Guid(08290eb88a805be4fb10517ce6f086cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Coins/penny.obj using Guid(08290eb88a805be4fb10517ce6f086cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45115889237cac004b8690a2cf539d09') in 0.035963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/Headstone Parts/blankHeadstone.prefab
+  artifactKey: Guid(7c50853fc3857ed4cac98efd8551ad0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/blankHeadstone.prefab using Guid(7c50853fc3857ed4cac98efd8551ad0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a388f084f076675e32d2a76bd35c07') in 0.145140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Personal Headstones/PB-622-F.obj
+  artifactKey: Guid(206cb3be460fec644a1051fc1ca094ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-622-F.obj using Guid(206cb3be460fec644a1051fc1ca094ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3179280330573c14d57f7332fcd95401') in 0.035490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Gates/widerPost.obj
+  artifactKey: Guid(7ecd3c51f2f9a0a4ca427828912f4c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/widerPost.obj using Guid(7ecd3c51f2f9a0a4ca427828912f4c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfec0d3cd9bc06c614db072f35d6c20') in 0.039477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_04.prefab
+  artifactKey: Guid(f94554303b4f7094ea5e12fe79985529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_04.prefab using Guid(f94554303b4f7094ea5e12fe79985529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943206df3e50fd23ecb3652ec60be43a') in 0.112183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Rocks/Rock_06.prefab
+  artifactKey: Guid(ecb525e98866bac409e2f11a273c8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_06.prefab using Guid(ecb525e98866bac409e2f11a273c8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181805ac0cabf4814176eac56dc37a1f') in 0.077984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/LOD Headstones/PA-538-F.fbx
+  artifactKey: Guid(a0496c07cba5e5c4aae4e9ec38452d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-538-F.fbx using Guid(a0496c07cba5e5c4aae4e9ec38452d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3c151355f3d9659e7f602a3272816e') in 0.037973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/LOD Headstones/PA-79-F.fbx
+  artifactKey: Guid(86d8a02ee9328b94881f8f95a69260bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-79-F.fbx using Guid(86d8a02ee9328b94881f8f95a69260bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ada2e9b67eb2375732906bafd4ce40') in 0.064186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Personal Headstones/PA-88-F.obj
+  artifactKey: Guid(b0fd34b28748f7f41bc65cb27e067e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-88-F.obj using Guid(b0fd34b28748f7f41bc65cb27e067e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e418d0289f5457bc349ac02d1fe35b19') in 0.030173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_01.prefab
+  artifactKey: Guid(30b99e7dc1382e346a7f9789de00de5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_01.prefab using Guid(30b99e7dc1382e346a7f9789de00de5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de69795e64758d2a81042fd94ff9eb2') in 0.086623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Personal Headstones/PB-463-F.obj
+  artifactKey: Guid(d04b36b0fc5fe12448b7ea53ff75f415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-463-F.obj using Guid(d04b36b0fc5fe12448b7ea53ff75f415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25d74b0835ebdba541060a80593dace') in 0.037451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
+  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857d00b92706dd12525e05ee0d147f27') in 0.044618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_3.obj
+  artifactKey: Guid(680a2e77d3cf5b040ab3b64daee10014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/OBJ/OBJ_WE17_QuercusAgrifolia_3.obj using Guid(680a2e77d3cf5b040ab3b64daee10014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8526731b0a55baa70fb2e8f3c251b4') in 0.228478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/LOD Headstones/PA-473-F.fbx
+  artifactKey: Guid(6a5f929f367db9847b49cb5de702b97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-473-F.fbx using Guid(6a5f929f367db9847b49cb5de702b97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6703a79bf9f100690b7cbabbdb7e3c') in 0.080941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/LOD Headstones/PC-67-F.fbx
+  artifactKey: Guid(378f1723a4ffad24d9f17b6d077190bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PC-67-F.fbx using Guid(378f1723a4ffad24d9f17b6d077190bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ab9f81cdf7faf8ba5860f0b06c66df') in 0.042472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Models/Dade Monument and Pyramids/East.obj
+  artifactKey: Guid(17f19a1dc3f83e84ab4bad000951956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dade Monument and Pyramids/East.obj using Guid(17f19a1dc3f83e84ab4bad000951956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01096c07e88d6caa18b798f353ee13dd') in 0.103177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Models/LOD Headstones/PA-550-F.fbx
+  artifactKey: Guid(800e311cc103fd347811b471973ffe7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-550-F.fbx using Guid(800e311cc103fd347811b471973ffe7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b872c94b1e37696327af951a8f75cc5b') in 0.059221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Flag/FbxFlag.fbx
+  artifactKey: Guid(fff6dece0ded3f44494d3af7e3577afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Flag/FbxFlag.fbx using Guid(fff6dece0ded3f44494d3af7e3577afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d2a93d1ff4261210a5fe8fdb6e81ac') in 0.066614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
+  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795956f6c6c4d066aae74c9d294ad83b') in 0.033303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Signs Flag Pyramids/Full pyramid.prefab
+  artifactKey: Guid(16b3cb18f28a2df4488755103ca26e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Signs Flag Pyramids/Full pyramid.prefab using Guid(16b3cb18f28a2df4488755103ca26e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0c30bd3748c9e338777a45b667c332') in 0.018009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Rose/Rose.fbx
+  artifactKey: Guid(23e715d8131c8384cbcc1542c124fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rose/Rose.fbx using Guid(23e715d8131c8384cbcc1542c124fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8d068bb067d822481cc73ab01b4668') in 0.044747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/LOD Headstones/PA-61-F.fbx
+  artifactKey: Guid(dc7494da18566624f86e948b914d57b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-61-F.fbx using Guid(dc7494da18566624f86e948b914d57b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a55cefe3b587cb5cf3179856fea9d1') in 0.048171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Models/Personal Headstones/PB-419-F.obj
+  artifactKey: Guid(aa1b7665534ab1d4095ed92f6b09eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-419-F.obj using Guid(aa1b7665534ab1d4095ed92f6b09eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f655e02ae634b2e9c038ee67c03bc2a1') in 0.035452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/VR Hands/Prefabs/RightHand.prefab
+  artifactKey: Guid(eb778dafc62c34d42ba231befaedfcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Prefabs/RightHand.prefab using Guid(eb778dafc62c34d42ba231befaedfcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec49b72b90d4658c8c394f2ab02abf11') in 0.109147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/HSbundle.prefab
+  artifactKey: Guid(5836893b907313a48bc798adba17f2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HSbundle.prefab using Guid(5836893b907313a48bc798adba17f2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9ca48da21c9387342c8a10bf088b3d') in 0.057911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Walls/wallPostPlainFinal.prefab
+  artifactKey: Guid(997ddbb1b1c626d41978118273958c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallPostPlainFinal.prefab using Guid(997ddbb1b1c626d41978118273958c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31843b2cac11fce3a5cd6d3e2f78f4ea') in 0.035483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Light/mpm_vol.04_p21.FBX
+  artifactKey: Guid(be039154273ab6b49bfc66dea5d3747d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Light/mpm_vol.04_p21.FBX using Guid(be039154273ab6b49bfc66dea5d3747d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9bdccc2c8ed350e2ec5bbeb52815be2') in 0.087299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Models/LOD Headstones/PA-429-F.fbx
+  artifactKey: Guid(e37d6806101b2e34780eeb3643ecea91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-429-F.fbx using Guid(e37d6806101b2e34780eeb3643ecea91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2f7f6652c14acefa039a71432cf5bd') in 0.057494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Dade Obelisk/smallob.obj
+  artifactKey: Guid(df576072625d34c49a6613e2ef4f658c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dade Obelisk/smallob.obj using Guid(df576072625d34c49a6613e2ef4f658c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663ec39edff1c61d6577933b6f9b9890') in 0.033283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Oculus Hands Physics/Animations/r_hand_pinch_anim.fbx
+  artifactKey: Guid(165871bb4fa915847973b6955c7a670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/r_hand_pinch_anim.fbx using Guid(165871bb4fa915847973b6955c7a670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513dbdcfb7f9aca38d634935cc74290d') in 0.018959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_04.FBX
+  artifactKey: Guid(6013a9231cbf28447817bbf406307ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_04.FBX using Guid(6013a9231cbf28447817bbf406307ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645cccb38e512353f0c9107460421ac4') in 0.108908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Personal Headstones/PB-462-F.obj
+  artifactKey: Guid(96bb438a8d99b37469fa3895fe6c072b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-462-F.obj using Guid(96bb438a8d99b37469fa3895fe6c072b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66abfe5b55b16b1793b74f03615ce7c9') in 0.030722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Headstone Parts/pointer0.prefab
+  artifactKey: Guid(3a9f807063853974e819e543010eb37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/pointer0.prefab using Guid(3a9f807063853974e819e543010eb37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5ff03298af1566127d9fb81e579c5f') in 0.023633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_2.fbx
+  artifactKey: Guid(c467a81f2d2d4e9489df9d1b0be870ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_2.fbx using Guid(c467a81f2d2d4e9489df9d1b0be870ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24942a56804cbef6456a70810c17d11') in 0.111009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Signs Flag Pyramids/SANC Sign.prefab
+  artifactKey: Guid(ad5f6f9712fd564419ba81d35ca21098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Signs Flag Pyramids/SANC Sign.prefab using Guid(ad5f6f9712fd564419ba81d35ca21098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d1ebcb3a374a5b0ac074c4f37dd977') in 0.053803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Custom Right Hand Model.prefab
+  artifactKey: Guid(d2121c8d819597349ac6f3e6043fa1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Custom Right Hand Model.prefab using Guid(d2121c8d819597349ac6f3e6043fa1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c499c748dd5fa93ddf62fa86d8765c') in 0.023298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Rocks/Rock_03 1.prefab
+  artifactKey: Guid(770d1343f77dd4045b058b65adf5d49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_03 1.prefab using Guid(770d1343f77dd4045b058b65adf5d49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642d9868cf598070c858e4033d3a89b6') in 0.075369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/Gates/Iron Fence no bottom posts.obj
+  artifactKey: Guid(055e90e9e515e0749922c2adb6c0d8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/Iron Fence no bottom posts.obj using Guid(055e90e9e515e0749922c2adb6c0d8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520943b16c946c889ec8275510a8baa8') in 0.034219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_02.FBX
+  artifactKey: Guid(05e04fedc78047c48af519e94c595e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_02.FBX using Guid(05e04fedc78047c48af519e94c595e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc3ccbc8efe11ba485d2c1b26e40a34') in 0.142311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0.prefab
+  artifactKey: Guid(a3a9844299dc98c4ab1ffa5fccd63cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0.prefab using Guid(a3a9844299dc98c4ab1ffa5fccd63cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9a2bf9ca785332635ab618c9e0a0ad') in 0.155147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Dade Obelisk/obelisk.obj
+  artifactKey: Guid(f211551cb933bc24aafb2413efe063b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dade Obelisk/obelisk.obj using Guid(f211551cb933bc24aafb2413efe063b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec8d0709cd562cffc0be68b398edd24e') in 0.031228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Personal Headstones/PB-427-F.obj
+  artifactKey: Guid(0212fc4127f84cf43a83079b1687a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-427-F.obj using Guid(0212fc4127f84cf43a83079b1687a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410aaa5abae179a5ff26e2f4ffd36bc7') in 0.035091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab
+  artifactKey: Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab using Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab54091714b50432e66c6aa48106e04') in 0.035509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rocks/Rock_06 1.prefab
+  artifactKey: Guid(2f04dba07e4335447a4b6c06fb59548a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_06 1.prefab using Guid(2f04dba07e4335447a4b6c06fb59548a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd2b1999cbd2bba20eebb13a617c834') in 0.074194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/LOD Headstones/PA-87-F.fbx
+  artifactKey: Guid(2bb1d98ac8862674ea3da751cf8888fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-87-F.fbx using Guid(2bb1d98ac8862674ea3da751cf8888fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46744cfd35b512d67ab746e463500d4d') in 0.064357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/LOD Headstones/PA-233-F.fbx
+  artifactKey: Guid(69f10eb16dd982a4782e69e4b382cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-233-F.fbx using Guid(69f10eb16dd982a4782e69e4b382cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50b59716e65a1d525f730c626eabdb2') in 0.064844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Map/BlenderMap.fbx
+  artifactKey: Guid(29c00de4fe0f8f742ac3dc323eb07542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Map/BlenderMap.fbx using Guid(29c00de4fe0f8f742ac3dc323eb07542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de60942d399b736e4de200f226b2c1a2') in 0.041239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Headstone Parts/Headstone1.prefab
+  artifactKey: Guid(da084ca9ff3471346a4c1f520f5ae94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/Headstone1.prefab using Guid(da084ca9ff3471346a4c1f520f5ae94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f6ac7318597777a34f176d3b8ca941') in 0.102559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Models/Personal Headstones/PA-87-F.obj
+  artifactKey: Guid(93049debc67436e4ab46d3ca7686fcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-87-F.obj using Guid(93049debc67436e4ab46d3ca7686fcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7610531efcf22882d683fd69a0ec2a15') in 0.030926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Personal Headstones/PB-538-F.obj
+  artifactKey: Guid(1e8897db2a1bb564590908b5fde919d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-538-F.obj using Guid(1e8897db2a1bb564590908b5fde919d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641460f5d2aad71d8aeef1751b8305ad') in 0.032578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Walls/PostBall Final.prefab
+  artifactKey: Guid(d7e842619cb96294b894273887e9efaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/PostBall Final.prefab using Guid(d7e842619cb96294b894273887e9efaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea3a3cd5883afc0f4966c855b8e8bc7') in 0.024649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Roses/Red Rose.prefab
+  artifactKey: Guid(79d012295565df3429be8d490ff3261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Roses/Red Rose.prefab using Guid(79d012295565df3429be8d490ff3261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6b84197502bc9578eaf11f42130073') in 0.045367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/LOD Headstones/PA-403-F.fbx
+  artifactKey: Guid(1012bb3b3fcf5eb4aad1247fdccc4883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-403-F.fbx using Guid(1012bb3b3fcf5eb4aad1247fdccc4883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a67d835843e17c52bfe163b898af2fe') in 0.090122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Personal Headstones/PB-550-F.obj
+  artifactKey: Guid(09e96865affc0d144875d505554b0398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-550-F.obj using Guid(09e96865affc0d144875d505554b0398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960028b1d93ccbbd9bd8780218da9ae9') in 0.029978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/LOD Headstones/PA-127-F.fbx
+  artifactKey: Guid(93815fe89eacb7c47bd2763df5047bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-127-F.fbx using Guid(93815fe89eacb7c47bd2763df5047bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eeb90b9610db9bb391031e0946e0359') in 0.045171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Buildings/building.obj
+  artifactKey: Guid(3fb63f9b8e774c74298a29eca4e36968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/building.obj using Guid(3fb63f9b8e774c74298a29eca4e36968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6376175a3c25ebdde69483d10dce81') in 0.028505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0Navy.prefab
+  artifactKey: Guid(24e1410d13c6f424c8ecddc073d4eae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0Navy.prefab using Guid(24e1410d13c6f424c8ecddc073d4eae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8642670a3128c19022e30fb6615afbaa') in 0.091327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Personal Headstones/PA-24-F.obj
+  artifactKey: Guid(77a4c110b23fad048b2a7410fc1165a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-24-F.obj using Guid(77a4c110b23fad048b2a7410fc1165a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12905dd7744a9b3b931cf7ebe82098f9') in 0.036521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/LOD Headstones/PA-396-F.fbx
+  artifactKey: Guid(ea8dcdc3c3196ec4f98b0600b7fa1b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-396-F.fbx using Guid(ea8dcdc3c3196ec4f98b0600b7fa1b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d7606ca6e7cefe61c8a00bbe5d0c6a') in 0.065288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Rostrum/podium.obj
+  artifactKey: Guid(db8710123d4cfef42b2d9e6362ed38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rostrum/podium.obj using Guid(db8710123d4cfef42b2d9e6362ed38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c282333a602abf3617ef21107190bd') in 0.034345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/LOD Headstones/PA-587-F.fbx
+  artifactKey: Guid(6cfa5373315d80c4da23df67ad5446e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-587-F.fbx using Guid(6cfa5373315d80c4da23df67ad5446e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f56f348b268c595b5a9f0b83f5ae81f') in 0.044865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Personal Headstones/PB-403-F.obj
+  artifactKey: Guid(debe7df2abf87654faa7d88bac3910b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-403-F.obj using Guid(debe7df2abf87654faa7d88bac3910b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ecd37e351a34289bce5bb1abc7447e') in 0.030261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rocks/Rock_02 1.prefab
+  artifactKey: Guid(c72481abcbfefe444a48818baa8e92d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_02 1.prefab using Guid(c72481abcbfefe444a48818baa8e92d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315cce005a522ec9929017f5297354f5') in 0.080947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Walls/WiderBlockPost.prefab
+  artifactKey: Guid(368ec6c5346d96942b2745eae3fc8722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/WiderBlockPost.prefab using Guid(368ec6c5346d96942b2745eae3fc8722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678526fc55c07c955808a332def4dc6c') in 0.021276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Walls/Wall Segment Final.prefab
+  artifactKey: Guid(951d2b3373b17e644a9732bff712fa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/Wall Segment Final.prefab using Guid(951d2b3373b17e644a9732bff712fa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7842c6193a29058467c1e4951252f6') in 0.012480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/LOD Headstones/PA-2-F.fbx
+  artifactKey: Guid(b3107b1b6948d96489cf0d68b9b65d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-2-F.fbx using Guid(b3107b1b6948d96489cf0d68b9b65d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3e2594abe75a682a5c502a7d261d6e') in 0.085497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/VR Hands/Models/LeftHand.fbx
+  artifactKey: Guid(39e4d137e4080334483d17fec8dd0086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Models/LeftHand.fbx using Guid(39e4d137e4080334483d17fec8dd0086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f939bbaf7c82f8f47da0bb9b9b543bc6') in 0.048824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Personal Headstones/PB-539-F.obj
+  artifactKey: Guid(ac8f9d325d010c34bbefcf57259943b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-539-F.obj using Guid(ac8f9d325d010c34bbefcf57259943b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51370c8b5ba4e64cc4e332e997c0e0c') in 0.027559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/LeftHand.fbx
+  artifactKey: Guid(bf58f95ed79f0e24291aa1aa1b2ba989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LeftHand.fbx using Guid(bf58f95ed79f0e24291aa1aa1b2ba989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aef13f48b4cf7055728738c81c60d5f') in 0.067083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/LOD Headstones/PA-180-F.fbx
+  artifactKey: Guid(946fd0fc799f6644a978b9874fbc710f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-180-F.fbx using Guid(946fd0fc799f6644a978b9874fbc710f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d68c2808c67960cf3fda217df0c92f') in 0.135858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_01.FBX
+  artifactKey: Guid(f5df519d22979c248a77eadf5651b327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_01.FBX using Guid(f5df519d22979c248a77eadf5651b327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1805b0930ac3f0035e8a1f87627afdf2') in 0.182310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Walls/LongSegmentPrefab/LongSegment.prefab
+  artifactKey: Guid(c5b360ad25ab0ae46a74674565304f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/LongSegmentPrefab/LongSegment.prefab using Guid(c5b360ad25ab0ae46a74674565304f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71f1ab934b7671ad6d81b603f2928b2') in 0.015392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/VR Hands/Models/l_hand_skeletal_lowres.fbx
+  artifactKey: Guid(ca20b3907ff1c794cb89c1ad2cce8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VR Hands/Models/l_hand_skeletal_lowres.fbx using Guid(ca20b3907ff1c794cb89c1ad2cce8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ee3c11d1e05116e934a91b59477430') in 0.046941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/LOD Headstones/PA-18-F.fbx
+  artifactKey: Guid(6a2fffea80894164cb7663d46823057f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-18-F.fbx using Guid(6a2fffea80894164cb7663d46823057f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693216825d094170d694274235a51d7d') in 0.047455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Personal Headstones/PB-465-F.obj
+  artifactKey: Guid(8f3a6ad97f145c74a971734e7bd6d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-465-F.obj using Guid(8f3a6ad97f145c74a971734e7bd6d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33c95528b4e18d7406c9718127b80b1') in 0.032032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0Army.prefab
+  artifactKey: Guid(68eae5eddc0e9214e81606ecaa96a888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0Army.prefab using Guid(68eae5eddc0e9214e81606ecaa96a888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a2703fc3f52118896654ce1d3e5563') in 0.080801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/LOD Headstones/PA-316-F.fbx
+  artifactKey: Guid(9608c1d53190a7f49a8452bd01937a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-316-F.fbx using Guid(9608c1d53190a7f49a8452bd01937a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610cdb75d635f502b82f2cfb395a81de') in 0.067007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Personal Headstones/PB-588-F.obj
+  artifactKey: Guid(0021c307cf253a942b74b381718e8e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-588-F.obj using Guid(0021c307cf253a942b74b381718e8e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca0ad3f2d00a21048f51ad7974d0783') in 0.033096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Rocks/Rock_01.prefab
+  artifactKey: Guid(9bb793d4947e1a94d9e4281590733a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_01.prefab using Guid(9bb793d4947e1a94d9e4281590733a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baab474ccbb89d0805046051cd2772b1') in 0.075950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Walls/Small Gate Final.prefab
+  artifactKey: Guid(3d25203912d6d01469b9f7b11e9c7e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/Small Gate Final.prefab using Guid(3d25203912d6d01469b9f7b11e9c7e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b1700aaf5d283debbe351c48abf980') in 0.030571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Rocks/Rock_05 1.prefab
+  artifactKey: Guid(a7e2c1ad912d4114dbc249d9acc87696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_05 1.prefab using Guid(a7e2c1ad912d4114dbc249d9acc87696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6d4f0b052ba92936e6b4ccffeda6df') in 0.080641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_06.FBX
+  artifactKey: Guid(476d7e24f53ccf641805646d05f61bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_06.FBX using Guid(476d7e24f53ccf641805646d05f61bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ee84c5199269c4073fe507815aa202') in 0.091398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Prefabs/Headstone Parts/BillboardRotation.prefab
+  artifactKey: Guid(d4704f6bea8617f47953499916a4b35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/BillboardRotation.prefab using Guid(d4704f6bea8617f47953499916a4b35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7676fbd5e76842cd6f7a04a783e51ef9') in 0.035589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Roses/Yellow Rose.prefab
+  artifactKey: Guid(4fd84bb57ce8d7b48a69184f0fc76da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Roses/Yellow Rose.prefab using Guid(4fd84bb57ce8d7b48a69184f0fc76da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5419b12f2a4f6373b6a197a445c52b5d') in 0.034100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Oculus Hands Physics/Animations/l_hand_fist_anim.fbx
+  artifactKey: Guid(7cb2e1480bb51ce4282f540ea3f41d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/l_hand_fist_anim.fbx using Guid(7cb2e1480bb51ce4282f540ea3f41d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c130b69f2e3927708bf789637f031a') in 0.027285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/LoadSphere/flipSphere.fbx
+  artifactKey: Guid(a033710d0f79d7a48b9c1f556d04269d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LoadSphere/flipSphere.fbx using Guid(a033710d0f79d7a48b9c1f556d04269d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830f65f31bd7b6141047bdb464739d35') in 0.021227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton1.prefab
+  artifactKey: Guid(ed313cbd06f366848a641d03b17541dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton1.prefab using Guid(ed313cbd06f366848a641d03b17541dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4be5f0e41643d67e30770f2c22f0ddd') in 0.018106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/LOD Headstones/PA-147-F.fbx
+  artifactKey: Guid(4c06fb4be07a63a4dae38fefde9d845a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-147-F.fbx using Guid(4c06fb4be07a63a4dae38fefde9d845a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd942948dcc63896faea24bca5cb85f2b') in 0.044090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Walls/wallPostPlaion.obj
+  artifactKey: Guid(eca2edf7d85337143b22be9503daf86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallPostPlaion.obj using Guid(eca2edf7d85337143b22be9503daf86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92ad44bebd19e4afdc8ad9527d76fff') in 0.030849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Models/Gates/SmallFencePiece.obj
+  artifactKey: Guid(5d0e4e858e977534d864fd2f802082da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Gates/SmallFencePiece.obj using Guid(5d0e4e858e977534d864fd2f802082da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0045f90686b3d4484fb0815ee10016b6') in 0.111158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Particles.prefab
+  artifactKey: Guid(1d5c6ade324bd814eaf59789df93efcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Particles.prefab using Guid(1d5c6ade324bd814eaf59789df93efcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd194d59f191c1206ad1f6e080b4412') in 0.079624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Objects/Rock Package/Mesh/Rock_05.FBX
+  artifactKey: Guid(d27239c9a7de0f243876d949bb27027b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Mesh/Rock_05.FBX using Guid(d27239c9a7de0f243876d949bb27027b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880cd4151c2c2b77c4d898d5291e8e20') in 0.136427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Personal Headstones/PA-290-F.obj
+  artifactKey: Guid(265d9eda05780ba468b5a36a1755c540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-290-F.obj using Guid(265d9eda05780ba468b5a36a1755c540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484f1e383a1e3ee5712733d9b925b08f') in 0.031438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Rostrum/arch.obj
+  artifactKey: Guid(856e0992a81fea640b8661770ca787bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rostrum/arch.obj using Guid(856e0992a81fea640b8661770ca787bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921552dc77a1163279ee0de4b5a2accb') in 0.034806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_02.prefab
+  artifactKey: Guid(d7ba4fe833670a140b9b6085652f0e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_02.prefab using Guid(d7ba4fe833670a140b9b6085652f0e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d7f91b2051538829972bf55631ea4c') in 0.093119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_3.fbx
+  artifactKey: Guid(a0edac6f2e5976a46ad422181cec3e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_3.fbx using Guid(a0edac6f2e5976a46ad422181cec3e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c655f9d4e7dd13e38511a14843c24a') in 0.127754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Oculus Hands Physics/Animations/l_hand_default_anim.fbx
+  artifactKey: Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/l_hand_default_anim.fbx using Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936c7ec874f6d3bf5366f53252f71164') in 0.018285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000591 seconds.
+  path: Assets/Models/LOD Headstones/PA-290-F.fbx
+  artifactKey: Guid(cdd23d4c20185a34b8f019c4833b6daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-290-F.fbx using Guid(cdd23d4c20185a34b8f019c4833b6daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ca0ab3f1b70e669aa1675f49288810') in 0.046577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Personal Headstones/PB-396-F.obj
+  artifactKey: Guid(324509d11e421bb4784ad0252803fd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-396-F.obj using Guid(324509d11e421bb4784ad0252803fd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a6b6c53d9378aa763561432305733b') in 0.024913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_6.fbx
+  artifactKey: Guid(7f449f0e4d64a6a42bd979bf1df8218d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_6.fbx using Guid(7f449f0e4d64a6a42bd979bf1df8218d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81d2310ffd1c6a816dbcb10519ddc82') in 0.405774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.xr.legacyinputhelpers/Prefabs/XRRig.prefab
+  artifactKey: Guid(c116b7497ab8ca34c9188965d4295e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.legacyinputhelpers/Prefabs/XRRig.prefab using Guid(c116b7497ab8ca34c9188965d4295e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd8b0f8b96e19841b97bd32b36257d9') in 0.011886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Models/Coins/Coins_USSR_1924.FBX
+  artifactKey: Guid(3d85d4c3af3e4ba4aa88a23174721f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Coins/Coins_USSR_1924.FBX using Guid(3d85d4c3af3e4ba4aa88a23174721f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7fbfb1f62e0e8ccb6c1321cdf0c4dca') in 0.220880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/LOD Headstones/PA-80-F.fbx
+  artifactKey: Guid(4a26442f2f3b43a4b8c6f6be40891ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-80-F.fbx using Guid(4a26442f2f3b43a4b8c6f6be40891ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc087d2020524b9261a25224b87b6d12') in 0.064954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Coins/Coin_USSR_5_Kopeek_1924.prefab
+  artifactKey: Guid(4461e0016c0e5644d97298df4601b517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Coins/Coin_USSR_5_Kopeek_1924.prefab using Guid(4461e0016c0e5644d97298df4601b517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96813ebfb57307b360cad5e247a7738e') in 0.061692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Custom Left Hand Model with Collider.prefab
+  artifactKey: Guid(77459436eeb3aeb48871d657bcb5fd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Custom Left Hand Model with Collider.prefab using Guid(77459436eeb3aeb48871d657bcb5fd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc1cda768d71adca6e8ab55c73c1d25') in 0.053152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Dade Obelisk/Dade obelisk.prefab
+  artifactKey: Guid(55a613cbc1940054e9b721a9776b4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dade Obelisk/Dade obelisk.prefab using Guid(55a613cbc1940054e9b721a9776b4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec854c592b7ebf46024f5836cafaee04') in 0.054759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Coins/nickel.obj
+  artifactKey: Guid(bcdcf5b56a25be741854c4e8c2ad0c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Coins/nickel.obj using Guid(bcdcf5b56a25be741854c4e8c2ad0c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09662d50223f830bd60c02aaf9c8423') in 0.073938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Models/Personal Headstones/PA-121-F.obj
+  artifactKey: Guid(1d3f5563b87d26f48ab0e03fce56d8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-121-F.obj using Guid(1d3f5563b87d26f48ab0e03fce56d8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e337a6ebdd8e3063e40dede29de9acf8') in 0.030489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Personal Headstones/PA-147-F.obj
+  artifactKey: Guid(5fef81eb19e9c5541aa362cf02f68919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-147-F.obj using Guid(5fef81eb19e9c5541aa362cf02f68919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82f3da10cc47609356081753dea039b') in 0.025998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Walls/wallSegment.obj
+  artifactKey: Guid(b53bb02c4108f744c9575a3468999ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallSegment.obj using Guid(b53bb02c4108f744c9575a3468999ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496a2cd4d3a9440c4685e0702c8c0d61') in 0.027304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Objects/Bench/uploads_files_1987534_Bank_02.FBX
+  artifactKey: Guid(d655b7a72155c4943ab5f5212a384cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Bench/uploads_files_1987534_Bank_02.FBX using Guid(d655b7a72155c4943ab5f5212a384cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a7c9c61a0ea6376654835a548a1f7e') in 0.095125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Objects/Coins/quarter.prefab
+  artifactKey: Guid(dd5063f1ad93eec4f8a01774921ea7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Coins/quarter.prefab using Guid(dd5063f1ad93eec4f8a01774921ea7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff4ef81516ffa6b0cac1ce1d4d510a6') in 0.131876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/Keyboard.prefab
+  artifactKey: Guid(e50b80e05bf9c684287da295e5cc147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Keyboard.prefab using Guid(e50b80e05bf9c684287da295e5cc147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8844c0ae0a7728fb4cb5d35051d259c1') in 0.088699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Hands/Amy GloveEdit-right.fbx
+  artifactKey: Guid(9d7d6b6079ba71d4584d586ea3c7bfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Hands/Amy GloveEdit-right.fbx using Guid(9d7d6b6079ba71d4584d586ea3c7bfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22e8cac0cf8c5942fd884bbf8c3edd7') in 0.068415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Personal Headstones/PA-61-F.obj
+  artifactKey: Guid(252aeaecf53f10a4198cbd5e12a7fdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-61-F.obj using Guid(252aeaecf53f10a4198cbd5e12a7fdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16ac23ccac5b2121ae54e9c9255e6e7') in 0.030169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/LOD Headstones/PA-24-F.fbx
+  artifactKey: Guid(a61c05ae6fcfaad4e80f23e719f851cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-24-F.fbx using Guid(a61c05ae6fcfaad4e80f23e719f851cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e44635c21d93f9837b2d55d84f3930') in 0.071344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/LOD Headstones/PA-121-F.fbx
+  artifactKey: Guid(7ef2ae8e6998d2146a2cb594db172316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-121-F.fbx using Guid(7ef2ae8e6998d2146a2cb594db172316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc204acc103f095c8733d9862350dfd') in 0.054464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Walls/MA Fence.prefab
+  artifactKey: Guid(c8eaf5e8c9832a742b777eb28599b2d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/MA Fence.prefab using Guid(c8eaf5e8c9832a742b777eb28599b2d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9398be33e9f0bfb44cdb4279a241ee9d') in 0.032837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Skyboxes/SkySerie Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab
+  artifactKey: Guid(88c20de6c1dc0f04abeaffaac0a9a6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skyboxes/SkySerie Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab using Guid(88c20de6c1dc0f04abeaffaac0a9a6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa03745dc2c1ed73c8cc0a091abad93') in 0.191970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Objects/Coins/nickel.prefab
+  artifactKey: Guid(d0a49744773e217488498d87a184e6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Coins/nickel.prefab using Guid(d0a49744773e217488498d87a184e6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed19a72be8d18203dbbb068abd6a5578') in 0.209174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rocks/Rock_01 1.prefab
+  artifactKey: Guid(dd5106e1317d18b4e96fedd74aad63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_01 1.prefab using Guid(dd5106e1317d18b4e96fedd74aad63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46018c9ad91fcfd2e333b01ae7b8ab64') in 0.122174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/LOD Headstones/PA-88-F.fbx
+  artifactKey: Guid(94e7e0920fd6af44b941b0b158a2b612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-88-F.fbx using Guid(94e7e0920fd6af44b941b0b158a2b612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c4a4d0b429b8e882f3861142e055f4') in 0.070918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_4.fbx
+  artifactKey: Guid(ec6c17b55b6349740872916a224975da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Oak - Agrifolia/FBX/FBX_WE17_QuercusAgrifolia_4.fbx using Guid(ec6c17b55b6349740872916a224975da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382aeb6ca1831594555866580f945c3c') in 0.097963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/Headstone Parts/Headstone0.prefab
+  artifactKey: Guid(cd15a753cfd8a5d4db1e9013f519f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/Headstone0.prefab using Guid(cd15a753cfd8a5d4db1e9013f519f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ec107dfa848a88995d88dca4f57522') in 0.051755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Headstone Parts/LogoButton0Marines.prefab
+  artifactKey: Guid(6c4418aa3954bc84bb3a7db4399e9a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/LogoButton0Marines.prefab using Guid(6c4418aa3954bc84bb3a7db4399e9a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7d28340818554191e52ff40e62fef2') in 0.100670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Headstone Parts/bioBoardBack.prefab
+  artifactKey: Guid(e7aaac2906e5ed64ebd90b0f2673cc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/bioBoardBack.prefab using Guid(e7aaac2906e5ed64ebd90b0f2673cc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6eeb65b156575bba71934dedf6d0e70') in 0.040100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/LOD Headstones/PA-402-F.fbx
+  artifactKey: Guid(8ad87ed42daaf4a4db3022c022b22bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-402-F.fbx using Guid(8ad87ed42daaf4a4db3022c022b22bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd800df2d4a582895b1a541532c807593') in 0.067819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Right Hand Presence.prefab
+  artifactKey: Guid(ddc38db09f9124241b4b4e9b2b9831eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Right Hand Presence.prefab using Guid(ddc38db09f9124241b4b4e9b2b9831eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e962bbf48887077fb285b9ad40feaa') in 0.020072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Walls/Post Plain Final.prefab
+  artifactKey: Guid(11c9406d3aa25f1479da6ed1eaa7b89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Walls/Post Plain Final.prefab using Guid(11c9406d3aa25f1479da6ed1eaa7b89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c4d0d1b7c8909fe7d4fe1126b6d210') in 0.017602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Pyramids/pyramid.obj
+  artifactKey: Guid(2e07acb33de55b84ebbae53c57ba8af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Pyramids/pyramid.obj using Guid(2e07acb33de55b84ebbae53c57ba8af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d38d3b976f7ee134e631ddf3998c6f') in 0.030246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Personal Headstones/PA-18-F.obj
+  artifactKey: Guid(25dd3d3d5af6bbd4ea6444facd4ef058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-18-F.obj using Guid(25dd3d3d5af6bbd4ea6444facd4ef058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b53030242aaaf479e36f3fa1030276') in 0.029578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Oculus Hands Physics/Animations/l_hand_pinch_anim.fbx
+  artifactKey: Guid(a91ff20f7450bf446a6bf0bfb5e932ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Animations/l_hand_pinch_anim.fbx using Guid(a91ff20f7450bf446a6bf0bfb5e932ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a96356c44efd65490e7f31330bc890') in 0.022812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Personal Headstones/PA-233-F.obj
+  artifactKey: Guid(bd84df09060b68d4697c5cf536e16863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-233-F.obj using Guid(bd84df09060b68d4697c5cf536e16863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f792e73c467bb5b7528196cd6b205662') in 0.036921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/LOD Headstones/316F.obj
+  artifactKey: Guid(5c4176fc94125244f80b579ee9ff9471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/316F.obj using Guid(5c4176fc94125244f80b579ee9ff9471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df902e65023903b464ab691ca9a3738e') in 0.238163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/LOD Headstones/PA-622-F.fbx
+  artifactKey: Guid(97caa0ebde1a07e41b91de797d3f296d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-622-F.fbx using Guid(97caa0ebde1a07e41b91de797d3f296d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0749b30e445b9eacbe48cf9d38a1e160') in 0.051646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Objects/Rock Package/Prefabs/Rock_05.prefab
+  artifactKey: Guid(5d10ae558efe6a64d96e5b4d02ec6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Rock Package/Prefabs/Rock_05.prefab using Guid(5d10ae558efe6a64d96e5b4d02ec6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b526c5cb84f88beee0a985e6b534cdf7') in 0.116439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Personal Headstones/PB-405-F.obj
+  artifactKey: Guid(a4880b40991c4cc47b75347d8422a03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-405-F.obj using Guid(a4880b40991c4cc47b75347d8422a03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2c581b6795ba840d4bcbdd7147ecfe') in 0.030861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Personal Headstones/PA-79-F.obj
+  artifactKey: Guid(67fc5cf797e53a64aa8eaec075c1f7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PA-79-F.obj using Guid(67fc5cf797e53a64aa8eaec075c1f7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fc275ae25beac6de879d9e24a47139') in 0.031110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Buildings/Lodge.obj
+  artifactKey: Guid(3f4ac26a4487e9e4994705f38f37292a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/Lodge.obj using Guid(3f4ac26a4487e9e4994705f38f37292a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62834e3e78f61219e896c92963d80614') in 0.048655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rocks/Rock_04 1.prefab
+  artifactKey: Guid(0bf2d15cd9ee49448b036c84d39b71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_04 1.prefab using Guid(0bf2d15cd9ee49448b036c84d39b71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1658030a3a68d5866b77b5313aaa89d') in 0.116520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031324 seconds.
+  path: Assets/Prefabs/Signs Flag Pyramids/SANC Cem Sign.prefab
+  artifactKey: Guid(a817402c7c3a77e40969702332c5c67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Signs Flag Pyramids/SANC Cem Sign.prefab using Guid(a817402c7c3a77e40969702332c5c67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f002cdee8ed8e7ea2706444ce6615e') in 0.055955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Coins/quarter.obj
+  artifactKey: Guid(041c9ffdbd669744998a632aa3188b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Coins/quarter.obj using Guid(041c9ffdbd669744998a632aa3188b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35da789d2390dee1801e8b5e3d1c16a5') in 0.023202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Personal Headstones/PB-473-F.obj
+  artifactKey: Guid(110befe3b526fe1479dd1040bfe75202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-473-F.obj using Guid(110befe3b526fe1479dd1040bfe75202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db453e998a0033de513ec0a520a76ea1') in 0.045229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Walls/wallPostBallFinal.prefab
+  artifactKey: Guid(216bdc53dfa7a924e863b514afdf9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls/wallPostBallFinal.prefab using Guid(216bdc53dfa7a924e863b514afdf9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca189f750ca3ec5a069e87476546bcd') in 0.015993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/LOD Headstones/PA-465-F.fbx
+  artifactKey: Guid(5dcce00a6dcbc324da6b7dd849f4dade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LOD Headstones/PA-465-F.fbx using Guid(5dcce00a6dcbc324da6b7dd849f4dade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c68c434ec59ecd61fef206fd3f979f') in 0.060334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Oculus Hands Physics/Prefabs/Custom Left Hand Model.prefab
+  artifactKey: Guid(7811abe38615a86438f679bcf79f5b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus Hands Physics/Prefabs/Custom Left Hand Model.prefab using Guid(7811abe38615a86438f679bcf79f5b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40982ccf24b8322bda95e149f21ad692') in 0.015124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Birds/Flock.prefab
+  artifactKey: Guid(8683bdb39f8304c4e8a306b4dfb7e6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Birds/Flock.prefab using Guid(8683bdb39f8304c4e8a306b4dfb7e6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf1caebd62d52e1b23282bf106020ab') in 0.038989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Hands/AmyGloveEdit-left.fbx
+  artifactKey: Guid(4ccb475cdedd5e64f9752329121c8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Hands/AmyGloveEdit-left.fbx using Guid(4ccb475cdedd5e64f9752329121c8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce690ae32a8f9983ac867a95f9f5875') in 0.078817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Headstone Parts/pointer1.prefab
+  artifactKey: Guid(452e7f1f57473994bb96fbf8e27d4116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Headstone Parts/pointer1.prefab using Guid(452e7f1f57473994bb96fbf8e27d4116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e9f516a19b1a1dad9cfa3d536c4f33') in 0.038113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Personal Headstones/PB-653-F.obj
+  artifactKey: Guid(54feb38d4a3ad42419788fcdc1e0b775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personal Headstones/PB-653-F.obj using Guid(54feb38d4a3ad42419788fcdc1e0b775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427899073539b47ac96a908aa7ac4996') in 0.030788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rocks/Rock_02.prefab
+  artifactKey: Guid(f28579e16e22f5141b3c6c8fc80a01fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rocks/Rock_02.prefab using Guid(f28579e16e22f5141b3c6c8fc80a01fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9e2450cea6c252119c388f0e66f5e6') in 0.080554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3046.384246 seconds.
+  path: Assets/Materials/SANC-DroneFull.png
+  artifactKey: Guid(a93a24dbdcd6f734caebff6a320797af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SANC-DroneFull.png using Guid(a93a24dbdcd6f734caebff6a320797af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118cfc624378f93fca68baefd4d81324') in 0.144009 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.15 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 55 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.5 MB). Loaded Objects now: 4892.
+Memory consumption went from 124.9 MB to 123.4 MB.
+Total: 38.276900 ms (FindLiveObjects: 0.430800 ms CreateObjectMapping: 0.315500 ms MarkObjects: 37.003100 ms  DeleteObjects: 0.526100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
