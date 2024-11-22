@@ -30545,7 +30545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.299995, y: -25}
+  m_AnchoredPosition: {x: -25.3, y: -25}
   m_SizeDelta: {x: 458.02, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &784991390
@@ -53886,7 +53886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4979389419011688797, guid: 1d5c6ade324bd814eaf59789df93efcc, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 35127
+      value: 35287
       objectReference: {fileID: 0}
     - target: {fileID: 4979389419011688797, guid: 1d5c6ade324bd814eaf59789df93efcc, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -67315,7 +67315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.299995, y: -15}
+  m_AnchoredPosition: {x: -25.3, y: -15}
   m_SizeDelta: {x: 458.02, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1676343112
@@ -75148,7 +75148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43.4699, y: -25}
+  m_AnchoredPosition: {x: -43.46997, y: -25}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891530355
@@ -87665,7 +87665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43.4699, y: -15}
+  m_AnchoredPosition: {x: -43.46997, y: -15}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094104587
