@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43055704, g: 0.5636739, b: 0.7119701, a: 1}
+  m_IndirectSpecularColor: {r: 0.43055964, g: 0.56366396, b: 0.71150553, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -53603,7 +53603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7fb0d6e79199b42aeb5af0499f8f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DaySky: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
+  DaySky: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
   NightSky: {fileID: 2100000, guid: d4454f71d85928744be7771e2143dab7, type: 2}
   RainSky: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
 --- !u!1 &1338447589
