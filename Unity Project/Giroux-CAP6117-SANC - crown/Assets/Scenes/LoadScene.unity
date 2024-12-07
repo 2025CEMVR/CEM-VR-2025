@@ -25091,7 +25091,7 @@ GameObject:
   - component: {fileID: 689890029}
   - component: {fileID: 689890031}
   - component: {fileID: 689890030}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28865,7 +28865,7 @@ GameObject:
   - component: {fileID: 746958815}
   - component: {fileID: 746958817}
   - component: {fileID: 746958816}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41933,7 +41933,7 @@ GameObject:
   - component: {fileID: 1016514042}
   - component: {fileID: 1016514044}
   - component: {fileID: 1016514043}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43130,7 +43130,7 @@ GameObject:
   - component: {fileID: 1030518486}
   - component: {fileID: 1030518488}
   - component: {fileID: 1030518487}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45686,7 +45686,7 @@ GameObject:
   - component: {fileID: 1110162373}
   - component: {fileID: 1110162375}
   - component: {fileID: 1110162374}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52131,7 +52131,7 @@ GameObject:
   - component: {fileID: 1278725035}
   - component: {fileID: 1278725037}
   - component: {fileID: 1278725036}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75329,7 +75329,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -43.4699, y: -25}
-  m_SizeDelta: {x: 160, y: 20}
+  m_SizeDelta: {x: 177.5, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891530355
 MonoBehaviour:
@@ -87864,7 +87864,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -43.4699, y: -15}
-  m_SizeDelta: {x: 160, y: 20}
+  m_SizeDelta: {x: 177.5, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094104587
 MonoBehaviour:
