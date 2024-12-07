@@ -102,7 +102,7 @@ public class ToggleQueryUI : MonoBehaviour
         Vector3 eulerRotation = gameObject.transform.rotation.eulerAngles;
         gameObject.transform.rotation = Quaternion.Euler(35, eulerRotation.y, eulerRotation.z);
         // set the proper height
-        Vector3 setPos = new Vector3(gameObject.transform.localPosition.x, SetSignHeight.camHeight, gameObject.transform.localPosition.z);
+        Vector3 setPos = new Vector3(gameObject.transform.localPosition.x, .8f, gameObject.transform.localPosition.z);
         gameObject.transform.localPosition = setPos;
     }
 
