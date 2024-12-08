@@ -41,11 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<<< HEAD:Unity Project/Giroux-CAP6117-SANC - crown/Assets/Models/Flats/Materials/long flats/C-71-F.mat
         m_Texture: {fileID: 2800000, guid: d875ca0d6a5eeba40b9744605becebd0, type: 3}
-========
-        m_Texture: {fileID: 2800000, guid: b530b2a0b365dbb42b9a9e2c24382514, type: 3}
->>>>>>>> e03bb1ddc0ea3ee367a0a7d81220d97ed4051b65:Unity Project/Giroux-CAP6117-SANC - crown/Assets/Models/Signs/Materials/signtex1.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
