@@ -1,0 +1,37 @@
+name: Opening Scene
+
+on:
+ pull_request:
+   branches: [main]
+
+jobs:
+ test:
+   name: Run Unity Unit Tests
+   runs-on: ubuntu-latest
+   container:
+     image: ghcr.io/2025cemvr/cem-vr-2025/unity-custom:2021.3.8f1-linux-il2cpp-3.1.0
+
+
+   steps:
+     - name: Checkout project
+       uses: actions/checkout@v4
+
+
+     - name: Run Unity Simulation
+       run: |
+         mkdir -p TestResults
+         /opt/unity/Editor/Unity \
+           -batchmode \
+           -nographics \
+           -projectPath /__w/cem-vr-2025/cem-vr-2025 \
+           -runTests \
+           -testPlatform playmode \
+           -testResults /__w/cem-vr-2025/cem-vr-2025/TestResults/results.xml \
+           -quit
+
+
+     - name: Upload Test Results
+       uses: actions/upload-artifact@v4
+       with:
+         name: Unity Test Results
+         path: TestResults
