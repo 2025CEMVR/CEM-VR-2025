@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 /// <summary>
 /// This class is used to control the teleportation ray navigation via the thumb stick.
@@ -9,7 +9,7 @@ public class RayToggler : MonoBehaviour
 {
     [SerializeField] private InputActionReference activateReference = null;
     [SerializeField] private GameObject reticleGO;
-    private XRRayInteractor rayInteractor = null;
+    private UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor = null;
     private bool isEnabled = false;
 
     /// <summary>
@@ -17,7 +17,7 @@ public class RayToggler : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        rayInteractor = GetComponent<XRRayInteractor>();
+        rayInteractor = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor>();
     }
 
     /// <summary>

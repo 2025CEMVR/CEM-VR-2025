@@ -53,22 +53,45 @@ public class HandPhysics : MonoBehaviour
         }
     }
 
+    private bool IsVector3Valid(Vector3 v)
+{
+    return !(float.IsNaN(v.x) || float.IsInfinity(v.x) ||
+             float.IsNaN(v.y) || float.IsInfinity(v.y) ||
+             float.IsNaN(v.z) || float.IsInfinity(v.z));
+}
 
     /// <summary>
     /// Adjusts the position and rotation of the hand.
     /// </summary>
     void FixedUpdate()
     {
-        // position
+        // position velocity
         rb.velocity = (target.position - transform.position) / Time.fixedDeltaTime;
 
-        // rotation
+        // rotation velocity
         Quaternion rotationDifference = target.rotation * Quaternion.Inverse(transform.rotation);
-
         rotationDifference.ToAngleAxis(out float angleInDegree, out Vector3 rotationAxis);
 
-        Vector3 rotationDifferenceInDegree = angleInDegree * rotationAxis;
+        // Edge case: angle ≈ 0 can return a broken axis (NaN or Infinity)
+        if (angleInDegree > 0.01f && IsVector3Valid(rotationAxis))
+        {
+            Vector3 rotationDifferenceInDegree = angleInDegree * rotationAxis;
+            Vector3 angularVelocity = (rotationDifferenceInDegree * Mathf.Deg2Rad / Time.fixedDeltaTime);
 
-        rb.angularVelocity = (rotationDifferenceInDegree * Mathf.Deg2Rad / Time.fixedDeltaTime);
+            if (IsVector3Valid(angularVelocity))
+            {
+                rb.angularVelocity = angularVelocity;
+            }
+            else
+            {
+                Debug.LogWarning("Invalid angular velocity calculated: " + angularVelocity);
+            }
+        }
+        else
+        {
+            // Skip angular velocity update to avoid applying NaNs
+            rb.angularVelocity = Vector3.zero;
+        }
     }
+
 }
