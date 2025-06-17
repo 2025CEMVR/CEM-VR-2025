@@ -536,10 +536,13 @@ public class DatabaseControl : MonoBehaviour
         while (headstoneQueue.Count > 0)
         {
             GameObject next = headstoneQueue.Dequeue();
+            Debug.Log("PUMPKIN: " + next.gameObject.name);
             // set the logo button and pointer to active for both levels of detail
-            next.transform.Find("LogoButton0").gameObject.SetActive(true);;
+            Transform child = next.transform.Find("LogoButton0");
+            if (child == null) continue;
+            next.transform.Find("LogoButton0").gameObject.SetActive(true);
             next.transform.Find("LogoButton1").gameObject.SetActive(true);
-
+            
             // set both pointers
             Transform hsPointer = next.transform.Find("pointer0");
             hsPointer.gameObject.SetActive(true);
@@ -632,23 +635,29 @@ public class DatabaseControl : MonoBehaviour
         while (reader != null && reader.Read())
         {
             // get the game object associated with this headstone
-            hsGO = GameObject.Find(reader.GetStringValue("burialID"));
-            // not all may exist in the scene yet
-            if (hsGO is not null)
+            try
             {
-                // set the logo button and pointer to active for both levels of detail
-                Transform hsLogo = hsGO.transform.Find("LogoButton0");
-                hsLogo.gameObject.SetActive(false);
-                hsLogo = hsGO.transform.Find("LogoButton1");
-                hsLogo.gameObject.SetActive(false);
-                Transform hsPointer = hsGO.transform.Find("pointer0");
-                hsPointer.gameObject.SetActive(false);
-                hsPointer = hsGO.transform.Find("pointer1");
-                hsPointer.gameObject.SetActive(false);
+                hsGO = GameObject.Find(reader.GetStringValue("burialID"));
+                // not all may exist in the scene yet
+                if (hsGO is not null)
+                {
+                    // set the logo button and pointer to active for both levels of detail
+                    Transform hsLogo = hsGO.transform.Find("LogoButton0");
+                    hsLogo.gameObject.SetActive(false);
+                    hsLogo = hsGO.transform.Find("LogoButton1");
+                    hsLogo.gameObject.SetActive(false);
+                    Transform hsPointer = hsGO.transform.Find("pointer0");
+                    hsPointer.gameObject.SetActive(false);
+                    hsPointer = hsGO.transform.Find("pointer1");
+                    hsPointer.gameObject.SetActive(false);
 
-                // use rotation object
-                Transform hsRot = hsGO.transform.Find("BillboardRotation");
-                hsRot.gameObject.SetActive(false);
+                    // use rotation object
+                    Transform hsRot = hsGO.transform.Find("BillboardRotation");
+                    hsRot.gameObject.SetActive(false);
+                }
+            } catch (System.Exception e)
+            {
+                Debug.Log("DatabaseControl.cs ResetPointers Error message: " + e.Message);
             }
         }
         // turn buttons off before adjusting
@@ -719,24 +728,32 @@ public class DatabaseControl : MonoBehaviour
         DBReader reader = db.Select(tStr);
         while (reader != null && reader.Read())
         {
-            // get the game object associated with this headstone
-            hsGO = GameObject.Find(reader.GetStringValue("burialID"));
-            // not all may exist in the scene yet
-            if (hsGO is not null)
+            try
             {
-                // set the logo button and pointer to active for both levels of detail
-                Transform hsLogo = hsGO.transform.Find("LogoButton0");
-                hsLogo.gameObject.SetActive(false);
-                hsLogo = hsGO.transform.Find("LogoButton1");
-                hsLogo.gameObject.SetActive(false);
 
-                Transform hsPointer = hsGO.transform.Find("pointer0");
-                hsPointer.gameObject.SetActive(false);
-                hsPointer = hsGO.transform.Find("pointer1");
-                hsPointer.gameObject.SetActive(false);
-                // use rotation object
-                Transform hsRot = hsGO.transform.Find("BillboardRotation");
-                hsRot.gameObject.SetActive(false);
+
+                // get the game object associated with this headstone
+                hsGO = GameObject.Find(reader.GetStringValue("burialID"));
+                // not all may exist in the scene yet
+                if (hsGO is not null)
+                {
+                    // set the logo button and pointer to active for both levels of detail
+                    Transform hsLogo = hsGO.transform.Find("LogoButton0");
+                    hsLogo.gameObject.SetActive(false);
+                    hsLogo = hsGO.transform.Find("LogoButton1");
+                    hsLogo.gameObject.SetActive(false);
+
+                    Transform hsPointer = hsGO.transform.Find("pointer0");
+                    hsPointer.gameObject.SetActive(false);
+                    hsPointer = hsGO.transform.Find("pointer1");
+                    hsPointer.gameObject.SetActive(false);
+                    // use rotation object
+                    Transform hsRot = hsGO.transform.Find("BillboardRotation");
+                    hsRot.gameObject.SetActive(false);
+                }
+            } catch(System.Exception e)
+            {
+                Debug.Log("DatabaseControl.cs EditAdv Line 728 Error Message: " + e.Message);
             }
         }
         // turn buttons off before adjusting
@@ -766,23 +783,29 @@ public class DatabaseControl : MonoBehaviour
         DBReader reader = db.Select(tStr);
         while (reader != null && reader.Read())
         {
-            // get the game object associated with this headstone
-            hsGO = GameObject.Find(reader.GetStringValue("burialID"));
-            // not all may exist in the scene yet
-            if (hsGO is not null)
+            try
             {
-                // set the logo button and pointer to active for both levels of detail
-                Transform hsLogo = hsGO.transform.Find("LogoButton0");
-                hsLogo.gameObject.SetActive(false);
-                hsLogo = hsGO.transform.Find("LogoButton1");
-                hsLogo.gameObject.SetActive(false);
-                Transform hsPointer = hsGO.transform.Find("pointer0");
-                hsPointer.gameObject.SetActive(false);
-                hsPointer = hsGO.transform.Find("pointer1");
-                hsPointer.gameObject.SetActive(false);
-                // use rotation object
-                Transform hsRot = hsGO.transform.Find("BillboardRotation");
-                hsRot.gameObject.SetActive(false);
+                // get the game object associated with this headstone
+                hsGO = GameObject.Find(reader.GetStringValue("burialID"));
+                // not all may exist in the scene yet
+                if (hsGO is not null)
+                {
+                    // set the logo button and pointer to active for both levels of detail
+                    Transform hsLogo = hsGO.transform.Find("LogoButton0");
+                    hsLogo.gameObject.SetActive(false);
+                    hsLogo = hsGO.transform.Find("LogoButton1");
+                    hsLogo.gameObject.SetActive(false);
+                    Transform hsPointer = hsGO.transform.Find("pointer0");
+                    hsPointer.gameObject.SetActive(false);
+                    hsPointer = hsGO.transform.Find("pointer1");
+                    hsPointer.gameObject.SetActive(false);
+                    // use rotation object
+                    Transform hsRot = hsGO.transform.Find("BillboardRotation");
+                    hsRot.gameObject.SetActive(false);
+                }
+            } catch(System.Exception e) 
+            {
+                Debug.Log("DatabaseControl.cs EditBasic Error Message: " + e.Message);
             }
         }
         // turn buttons off before adjusting
