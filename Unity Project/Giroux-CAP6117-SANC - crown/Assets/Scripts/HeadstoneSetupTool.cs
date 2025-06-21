@@ -23,7 +23,7 @@ public class HeadstoneSetupTool : EditorWindow
         foreach (HSdata hsd in hsdarray)
         {
             GameObject headstone = hsd.gameObject;
-            //LoadDatabaseInfoFor(headstone, db);
+            LoadDatabaseInfoFor(headstone, db);
             size++;
         }
         Debug.Log("Number of headstones in scene: " + size);
