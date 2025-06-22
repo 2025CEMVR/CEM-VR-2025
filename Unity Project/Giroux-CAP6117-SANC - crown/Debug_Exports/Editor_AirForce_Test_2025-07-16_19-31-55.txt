@@ -1,0 +1,167 @@
+=== AIR FORCE HEADSTONE TEST RESULTS ===
+Timestamp: 7/16/2025 7:31:55 PM
+Total Database Records: 26
+Found GameObjects with LogoButton0: 15
+Missing GameObjects or LogoButton0: 11
+Match Rate: 57.7%
+
+=== FOUND GAMEOBJECTS (with LogoButton0) ===
+BurialID: B-563-F - KENNETH GIRVIN
+  Scene: CemeteryAssetsFull
+  Position: (-18.28, 0.23, 20.43)
+  Parent: Row 7
+  Hierarchy Path: Military Headstones/Section B/Row 7/B-563-F
+  Active: True
+  Layer: Default
+
+BurialID: B-640-F - JESSE GILLIAM
+  Scene: CemeteryAssetsFull
+  Position: (-23.58, 0.23, 23.34)
+  Parent: Row 9
+  Hierarchy Path: Military Headstones/Section B/Row 9/B-640-F
+  Active: True
+  Layer: Default
+
+BurialID: C-10-F - FRANCIS RYAN
+  Scene: CemeteryAssetsFull
+  Position: (-5.09, 0.23, -5.67)
+  Parent: Row 2
+  Hierarchy Path: Military Headstones/Section C/Row 2/C-10-F
+  Active: True
+  Layer: Default
+
+BurialID: C-131-F - NED BOSTIC
+  Scene: CemeteryAssetsFull
+  Position: (-20.93, 0.23, -6.05)
+  Parent: Row 8
+  Hierarchy Path: Military Headstones/Section C/Row 8/C-131-F
+  Active: True
+  Layer: Default
+
+BurialID: C-60-F - GORDON KERR
+  Scene: CemeteryAssetsFull
+  Position: (-12.99, 0.23, 3.90)
+  Parent: Row 5
+  Hierarchy Path: Military Headstones/Section C/Row 5/C-60-F
+  Active: True
+  Layer: Default
+
+BurialID: C-81-F - JOHN REVELLE
+  Scene: CemeteryAssetsFull
+  Position: (-15.69, 0.23, 3.90)
+  Parent: Row 6
+  Hierarchy Path: Military Headstones/Section C/Row 6/C-81-F
+  Active: True
+  Layer: Default
+
+BurialID: D-158-F - MAX DENTON
+  Scene: CemeteryAssetsFull
+  Position: (5.48, 0.23, -10.99)
+  Parent: Row 2
+  Hierarchy Path: Military Headstones/Section D/Row 2/D-158-F
+  Active: True
+  Layer: Default
+
+BurialID: D-176-F - ALFRED GATES
+  Scene: CemeteryAssetsFull
+  Position: (3.40, 0.23, -10.99)
+  Parent: Row 1
+  Hierarchy Path: Military Headstones/Section D/Row 1/D-176-F
+  Active: True
+  Layer: Default
+
+BurialID: D-73-F - JOSEPH CASTIGLIONE
+  Scene: CemeteryAssetsFull
+  Position: (15.07, 0.23, -2.66)
+  Parent: Row 6
+  Hierarchy Path: Military Headstones/Section D/Row 6/D-73-F
+  Active: True
+  Layer: Default
+
+BurialID: E-26-F - CHARLES JOHNS
+  Scene: CemeteryAssetsFull
+  Position: (11.17, 0.23, -32.48)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-26-F
+  Active: True
+  Layer: Default
+
+BurialID: E-26-B-F - WILBUR BAILEY
+  Scene: CemeteryAssetsFull
+  Position: (9.91, 0.23, -32.48)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-26-B-F
+  Active: True
+  Layer: Default
+
+BurialID: E-5-F - WILLIAM COOPER
+  Scene: CemeteryAssetsFull
+  Position: (16.17, 0.23, -46.65)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-5-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-1-B-F - CHARLES DICKEY
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -15.81)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-1-B-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-6-F - WILLIAM THOMAS
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -3.40)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-6-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-7-F - ROBERT KILLAM
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -1.95)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-7-F
+  Active: True
+  Layer: Default
+
+=== MISSING GAMEOBJECTS OR LOGOBUTTON0 ===
+A-15-A-F - WILLIAM CASEY
+A-18-C-F - CHARLES PREVOST
+A-34-D-F - HOWARD JONES
+A-34-G-F - THEODORE WENGERT
+B-657-A-F - RAYMOND RIES
+B-663-A-F - DENNIS TONER
+B-665-A-F - JAMES GUNN
+B-677-A-F - EARL WIETZ
+B-681-A-F - FRANK SCHILSKY
+B-694-A-F - ADOLPH GUIDI
+MA-1B-F - STEPHEN SIRKIN
+=== DATABASE RECORDS ===
+Database: A-15-A-F - WILLIAM CASEY
+Database: A-18-C-F - CHARLES PREVOST
+Database: A-34-D-F - HOWARD JONES
+Database: A-34-G-F - THEODORE WENGERT
+Database: B-563-F - KENNETH GIRVIN
+Database: B-640-F - JESSE GILLIAM
+Database: B-657-A-F - RAYMOND RIES
+Database: B-663-A-F - DENNIS TONER
+Database: B-665-A-F - JAMES GUNN
+Database: B-677-A-F - EARL WIETZ
+Database: B-681-A-F - FRANK SCHILSKY
+Database: B-694-A-F - ADOLPH GUIDI
+Database: C-10-F - FRANCIS RYAN
+Database: C-131-F - NED BOSTIC
+Database: C-60-F - GORDON KERR
+Database: C-81-F - JOHN REVELLE
+Database: D-158-F - MAX DENTON
+Database: D-176-F - ALFRED GATES
+Database: D-73-F - JOSEPH CASTIGLIONE
+Database: E-26-F - CHARLES JOHNS
+Database: E-26-B-F - WILBUR BAILEY
+Database: E-5-F - WILLIAM COOPER
+Database: MA-1B-F - STEPHEN SIRKIN
+Database: MA-1-B-F - CHARLES DICKEY
+Database: MA-6-F - WILLIAM THOMAS
+Database: MA-7-F - ROBERT KILLAM
