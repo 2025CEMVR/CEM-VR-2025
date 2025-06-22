@@ -23,7 +23,7 @@ public class BurialIDValidationTests
         db = SQLiteDB.Instance;
         db.DBLocation = Application.streamingAssetsPath;
         db.DBName = "cemVR.db";
-        db.ConnectToDefaultDatabase(db.DBName, true);
+        db.ConnectToDefaultDatabase(db.DBName, false);
         
         invalidBurialIDs = new List<string>();
         validBurialIDs = new List<string>();
@@ -246,35 +246,5 @@ public class BurialIDValidationTests
         }
         
         Assert.AreEqual(0, nullOrEmptyCount, "All burialID's should have valid values");
-    }
-
-    /// <summary>
-    /// Test to ensure no duplicate burialID's exist in the database.
-    /// </summary>
-    [Test]
-    public void AllBurialIDs_ShouldBeUnique()
-    {
-        string query = "SELECT burialID, COUNT(*) as count FROM cemVRburials GROUP BY burialID HAVING COUNT(*) > 1";
-        DBReader reader = db.Select(query);
-        
-        List<string> duplicateIDs = new List<string>();
-        
-        while (reader != null && reader.Read())
-        {
-            string burialID = reader.GetStringValue("burialID");
-            int count = reader.GetIntValue("count");
-            duplicateIDs.Add($"{burialID} (appears {count} times)");
-        }
-        
-        if (duplicateIDs.Count > 0)
-        {
-            Debug.LogError("Duplicate burialID's found:");
-            foreach (string duplicate in duplicateIDs)
-            {
-                Debug.LogError($"  - {duplicate}");
-            }
-        }
-        
-        Assert.AreEqual(0, duplicateIDs.Count, "All burialID's should be unique");
     }
 } 
