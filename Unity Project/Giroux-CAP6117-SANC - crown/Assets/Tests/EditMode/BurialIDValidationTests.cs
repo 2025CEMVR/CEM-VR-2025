@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using System.Text.RegularExpressions;
 using SQLiteDatabase;
+using System.Linq;
+
 
 /// <summary>
 /// Unit tests for validating burialID format in the cemetery database.
@@ -214,37 +216,132 @@ public class BurialIDValidationTests
     }
 
     /// <summary>
-    /// Test to ensure no burialID's are null or empty in the database.
+    /// Comprehensive test to ensure no critical database fields are null or empty.
+    /// Tests all important fields that should have values for proper cemetery data integrity.
     /// </summary>
     [Test]
-    public void AllBurialIDs_ShouldNotBeNullOrEmpty()
+    public void AllCriticalDatabaseFields_ShouldNotBeNullOrEmpty()
     {
-        string query = "SELECT burialID FROM cemVRburials";
+        // Define critical fields that should not be empty
+        string[] criticalFields = {
+            "burialID",      // Primary identifier
+            "section",       // Cemetery section
+            "site",          // Burial site
+            "markerFace",    // Front/back of marker
+            "firstName",     // Person's first name
+            "lastName"       // Person's last name
+        };
+        
+        // Define fields that can be empty but should be checked for data quality
+        string[] optionalFields = {
+            "middleName",    // Middle name (can be empty)
+            "suffix",        // Name suffix (Jr, Sr, etc.)
+            "birthYear",     // Birth year (0 if unknown)
+            "deathYear",     // Death year (0 if unknown)
+            "sex",           // Gender (M/F)
+            "veteran",       // Veteran status (0/1)
+            "rank",          // Military rank
+            "unit",          // Military unit
+            "state",         // State of origin
+            "emblemBelief",  // Religious emblem
+            "headstonePhoto" // Photo filename
+        };
+        
+        // Query all records with all fields
+        string query = "SELECT * FROM cemVRburials";
+        Debug.Log($"Executing comprehensive field validation query: {query}");
+        
         DBReader reader = db.Select(query);
         
-        int nullOrEmptyCount = 0;
-        List<string> nullOrEmptyIDs = new List<string>();
+        if (reader == null)
+        {
+            Debug.LogError("DBReader is null - query failed!");
+            Assert.Fail("Database query returned null reader");
+            return;
+        }
+        
+        int totalRecords = 0;
+        Dictionary<string, int> emptyFieldCounts = new Dictionary<string, int>();
+        Dictionary<string, List<string>> emptyFieldExamples = new Dictionary<string, List<string>>();
+        
+        // Initialize counters
+        foreach (string field in criticalFields.Concat(optionalFields))
+        {
+            emptyFieldCounts[field] = 0;
+            emptyFieldExamples[field] = new List<string>();
+        }
+        
+        Debug.Log("=== COMPREHENSIVE DATABASE FIELD VALIDATION TEST ===");
         
         while (reader != null && reader.Read())
         {
+            totalRecords++;
             string burialID = reader.GetStringValue("burialID");
             
-            if (string.IsNullOrEmpty(burialID))
+            // Check critical fields
+            foreach (string field in criticalFields)
             {
-                nullOrEmptyCount++;
-                nullOrEmptyIDs.Add(burialID ?? "NULL");
+                string value = reader.GetStringValue(field);
+                if (string.IsNullOrEmpty(value))
+                {
+                    emptyFieldCounts[field]++;
+                    emptyFieldExamples[field].Add(burialID);
+                    Debug.LogWarning($"Critical field '{field}' is empty for burialID: {burialID}");
+                }
+            }
+            
+            // Check optional fields (for data quality reporting)
+            foreach (string field in optionalFields)
+            {
+                string value = reader.GetStringValue(field);
+                if (string.IsNullOrEmpty(value))
+                {
+                    emptyFieldCounts[field]++;
+                    emptyFieldExamples[field].Add(burialID);
+                }
             }
         }
         
-        if (nullOrEmptyCount > 0)
+        // Log results
+        Debug.Log($"Total records processed: {totalRecords}");
+        Debug.Log("=== CRITICAL FIELD VALIDATION RESULTS ===");
+        
+        bool criticalFieldsValid = true;
+        foreach (string field in criticalFields)
         {
-            Debug.LogError($"Found {nullOrEmptyCount} null or empty burialID's:");
-            foreach (string id in nullOrEmptyIDs)
+            int emptyCount = emptyFieldCounts[field];
+            Debug.Log($"Field '{field}': {emptyCount} empty values out of {totalRecords} records");
+            
+            if (emptyCount > 0)
             {
-                Debug.LogError($"  - {id}");
+                criticalFieldsValid = false;
+                Debug.LogError($"Critical field '{field}' has {emptyCount} empty values:");
+                foreach (string example in emptyFieldExamples[field].Take(5)) // Show first 5 examples
+                {
+                    Debug.LogError($"  - {example}");
+                }
+                if (emptyFieldExamples[field].Count > 5)
+                {
+                    Debug.LogError($"  ... and {emptyFieldExamples[field].Count - 5} more");
+                }
             }
         }
         
-        Assert.AreEqual(0, nullOrEmptyCount, "All burialID's should have valid values");
+        Debug.Log("=== OPTIONAL FIELD DATA QUALITY REPORT ===");
+        foreach (string field in optionalFields)
+        {
+            int emptyCount = emptyFieldCounts[field];
+            double percentage = (double)emptyCount / totalRecords * 100;
+            Debug.Log($"Field '{field}': {emptyCount} empty values ({percentage:F1}%) out of {totalRecords} records");
+            
+            if (emptyCount > 0 && percentage > 50) // Flag if more than 50% are empty
+            {
+                Debug.LogWarning($"Field '{field}' has high percentage of empty values ({percentage:F1}%)");
+            }
+        }
+        
+        // Assert that all critical fields are valid
+        Assert.IsTrue(criticalFieldsValid, 
+            "All critical database fields should have valid values. Check the logs above for specific empty field details.");
     }
 } 
