@@ -10,6 +10,7 @@ if(len(sys.argv)>1):
 
 if os.path.isfile(rec_path):
     with open(rec_path) as file:
+        
         tsv_file = csv.reader(file, delimiter="\t")
         for line in tsv_file:
             s = line[1].split(",")
