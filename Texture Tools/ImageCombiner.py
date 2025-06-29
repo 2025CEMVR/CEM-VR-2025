@@ -86,7 +86,7 @@ def is_shadowed_image(img):
     return False
 
 
-def auto_balance_brightness_with_boost(image, max_gamma,brightness_threshold=200 ):
+def auto_balance_brightness_with_boost(image, max_gamma,brightness_threshold=80 ):
     """
     Increase the contrast of the given BGR image using CLAHE and increase brightness using a threshould
     The threshold defines the brightest a dark can be to be edited. This method ignores areas of pure black
@@ -95,7 +95,8 @@ def auto_balance_brightness_with_boost(image, max_gamma,brightness_threshold=200
         A brightened BGR image
     """
     # Convert to YUV and extract Y (brightness) channel
-    img_yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+    img_yuv = cv2.cvtColor(image.copy(), cv2.COLOR_BGR2YUV)
+    
     y_channel = img_yuv[:, :, 0]
 
     # Create mask to ignore pure black pixels
@@ -118,7 +119,7 @@ def auto_balance_brightness_with_boost(image, max_gamma,brightness_threshold=200
         inv_gamma = 1.0 / gamma
         # Build lookup table
         table = np.array([(i / 255.0) ** inv_gamma * 255 for i in range(256)]).astype(
-            "uint8"
+            "float32"
         )
         # Apply gamma correction in BGR space for brightness shift
         image = cv2.LUT(image, table)
@@ -169,8 +170,10 @@ def texture_blend(overlay,background,black_mask_value=10):
     
     #Use opacity Factor to blend according to the blurred Region of Interest
     opacity_factor=blurred_ROI/255.0
+    background=background.astype(np.float32)
+    blended_overlay=blended_overlay.astype(np.float32)
     final_image=((1-opacity_factor)*blended_overlay) + ((opacity_factor)*(background))
-    #final_image=overlay 
+    #final_image=oerlay 
     final_image[final_image>254]=255
     return final_image.copy()
 
@@ -222,18 +225,22 @@ def combine_images(
                 if(not(is_shadowed_image(overlay))):
                     
                     #test
-                    overlay = auto_balance_brightness_with_boost(overlay,max_gamma=3.0)
+                    contrast_overlay = auto_balance_brightness_with_boost(overlay,max_gamma=.70)
+                    overlay=cv2.addWeighted(overlay,0.1,contrast_overlay,0.9,1)
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_BGR2GRAY) 
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_GRAY2BGR)
                     
                    
                 else:
                     #test
-                    overlay = auto_balance_brightness_with_boost(overlay,max_gamma=7.0)
-                    overlay=cv2.cvtColor(overlay,cv2.COLOR_BGR2GRAY)
                     overlay=np.clip(overlay, 0, 255).astype(np.float32)
                     overlay[overlay>black_mask_value]=overlay[overlay>black_mask_value]+((255-(overlay[overlay>black_mask_value]))/2) 
                     overlay=np.clip(overlay, 0, 255).astype(np.uint8)
+                    overlay = auto_balance_brightness_with_boost(overlay,max_gamma=19.0)
+                    overlay=cv2.cvtColor(overlay,cv2.COLOR_BGR2GRAY)
+                    
+                    
+                    
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_GRAY2BGR)
                     overlay[overlay>255]=255
                     overlay[overlay<0]=255
@@ -274,16 +281,19 @@ def combine_images(
                     blended_texture=texture_blend(overlay,maskedBackground)
                     blended_texture=np.clip(blended_texture, 0, 255).astype(np.uint8)
                     background[(imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])] = cv2.addWeighted(blended_texture,0.9,maskedBackground,0.1,0)
+
                     
 
                 print(f"Combining: {os.path.basename(overlay_path)} onto background")
-
+        background=np.clip(background, 0, 255).astype(np.float32)
+        background-=30
+        background=np.clip(background, 0, 255).astype(np.uint8)
         # Resize Texture
         # background = cv2.resize(background, (resolution, resolution))
         # print(f"Resizing: {file_name} to be {resolution}x{resolution}")
 
         # Save the combined image with the new naming convention, ensuring no extra dashes
-        output_path = os.path.join(output_directory, f"{file_name}.jpg")
+        output_path = os.path.join(output_directory, f"{file_name}.png")
         cv2.imwrite(output_path, background)
         print(f"Saved combined image as {output_path}")
 
@@ -298,7 +308,7 @@ positions_and_sizes = [
     (1005, 0, 1043, 1590),
 ]  # First for F, second for R if present
 # Defines how wide the tombstone photo resolution can be in the 1024px x 1024px texture
-maxPhotoWidth = 384
+maxPhotoWidth = 500
 combine_images(
     background_image_path,
     overlay_images_info,
