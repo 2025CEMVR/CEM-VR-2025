@@ -1,0 +1,245 @@
+=== IN-GAME AIR FORCE QUERY RESULTS ===
+Timestamp: 7/4/2025 3:58:10 PM
+Total Database Records: 26
+Found GameObjects: 26
+Missing GameObjects: 0
+Match Rate: 100.0%
+
+=== FOUND GAMEOBJECTS ===
+BurialID: A-15-A-F
+  Scene: CemeteryAssetsFull
+  Position: (24.99, 0.02, 35.19)
+  Parent: Row 10
+  Hierarchy Path: Military Headstones/Section A/Row 10/A-15-A-F
+  Active: True
+  Layer: Default
+
+BurialID: A-18-C-F
+  Scene: CemeteryAssetsFull
+  Position: (24.99, 0.02, 29.90)
+  Parent: Row 10
+  Hierarchy Path: Military Headstones/Section A/Row 10/A-18-C-F
+  Active: True
+  Layer: Default
+
+BurialID: A-34-D-F
+  Scene: CemeteryAssetsFull
+  Position: (24.99, 0.02, 8.33)
+  Parent: Row 10
+  Hierarchy Path: Military Headstones/Section A/Row 10/A-34-D-F
+  Active: True
+  Layer: Default
+
+BurialID: A-34-G-F
+  Scene: CemeteryAssetsFull
+  Position: (24.99, 0.02, 11.28)
+  Parent: Row 10
+  Hierarchy Path: Military Headstones/Section A/Row 10/A-34-G-F
+  Active: True
+  Layer: Default
+
+BurialID: B-563-F
+  Scene: CemeteryAssetsFull
+  Position: (-18.28, 0.23, 20.43)
+  Parent: Row 7
+  Hierarchy Path: Military Headstones/Section B/Row 7/B-563-F
+  Active: True
+  Layer: Default
+
+BurialID: B-640-F
+  Scene: CemeteryAssetsFull
+  Position: (-23.58, 0.23, 23.34)
+  Parent: Row 9
+  Hierarchy Path: Military Headstones/Section B/Row 9/B-640-F
+  Active: True
+  Layer: Default
+
+BurialID: B-657-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.62, 0.07, 56.49)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-657-A-F
+  Active: True
+  Layer: Default
+
+BurialID: B-663-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.64, 0.07, 48.08)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-663-A-F
+  Active: True
+  Layer: Default
+
+BurialID: B-665-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.64, 0.07, 45.25)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-665-A-F
+  Active: True
+  Layer: Default
+
+BurialID: B-677-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.64, 0.07, 26.91)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-677-A-F
+  Active: True
+  Layer: Default
+
+BurialID: B-681-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.64, 0.07, 22.66)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-681-A-F
+  Active: True
+  Layer: Default
+
+BurialID: B-694-A-F
+  Scene: CemeteryAssetsFull
+  Position: (-27.64, 0.07, 9.15)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section B/Row 11/B-694-A-F
+  Active: True
+  Layer: Default
+
+BurialID: C-10-F
+  Scene: CemeteryAssetsFull
+  Position: (-5.09, 0.23, -5.67)
+  Parent: Row 2
+  Hierarchy Path: Military Headstones/Section C/Row 2/C-10-F
+  Active: True
+  Layer: Default
+
+BurialID: C-131-F
+  Scene: CemeteryAssetsFull
+  Position: (-20.93, 0.23, -6.05)
+  Parent: Row 8
+  Hierarchy Path: Military Headstones/Section C/Row 8/C-131-F
+  Active: True
+  Layer: Default
+
+BurialID: C-60-F
+  Scene: CemeteryAssetsFull
+  Position: (-12.99, 0.23, 3.90)
+  Parent: Row 5
+  Hierarchy Path: Military Headstones/Section C/Row 5/C-60-F
+  Active: True
+  Layer: Default
+
+BurialID: C-81-F
+  Scene: CemeteryAssetsFull
+  Position: (-15.69, 0.23, 3.90)
+  Parent: Row 6
+  Hierarchy Path: Military Headstones/Section C/Row 6/C-81-F
+  Active: True
+  Layer: Default
+
+BurialID: D-158-F
+  Scene: CemeteryAssetsFull
+  Position: (5.48, 0.23, -10.99)
+  Parent: Row 2
+  Hierarchy Path: Military Headstones/Section D/Row 2/D-158-F
+  Active: True
+  Layer: Default
+
+BurialID: D-176-F
+  Scene: CemeteryAssetsFull
+  Position: (3.40, 0.23, -10.99)
+  Parent: Row 1
+  Hierarchy Path: Military Headstones/Section D/Row 1/D-176-F
+  Active: True
+  Layer: Default
+
+BurialID: D-73-F
+  Scene: CemeteryAssetsFull
+  Position: (15.07, 0.23, -2.66)
+  Parent: Row 6
+  Hierarchy Path: Military Headstones/Section D/Row 6/D-73-F
+  Active: True
+  Layer: Default
+
+BurialID: E-26-F
+  Scene: CemeteryAssetsFull
+  Position: (11.17, 0.23, -32.48)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-26-F
+  Active: True
+  Layer: Default
+
+BurialID: E-26-B-F
+  Scene: CemeteryAssetsFull
+  Position: (9.91, 0.23, -32.48)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-26-B-F
+  Active: True
+  Layer: Default
+
+BurialID: E-5-F
+  Scene: CemeteryAssetsFull
+  Position: (16.17, 0.23, -46.65)
+  Parent: Section E
+  Hierarchy Path: Military Headstones/Section E/E-5-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-1-B-F
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -15.81)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-1-B-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-1-B-F
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -15.81)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-1-B-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-6-F
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -3.40)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-6-F
+  Active: True
+  Layer: Default
+
+BurialID: MA-7-F
+  Scene: CemeteryAssetsFull
+  Position: (-28.73, 0.23, -1.95)
+  Parent: Row 11
+  Hierarchy Path: Military Headstones/Section C/Row 11/MA-7-F
+  Active: True
+  Layer: Default
+
+=== MISSING GAMEOBJECTS ===
+
+=== DATABASE RECORDS ===
+Database: A-15-A-F
+Database: A-18-C-F
+Database: A-34-D-F
+Database: A-34-G-F
+Database: B-563-F
+Database: B-640-F
+Database: B-657-A-F
+Database: B-663-A-F
+Database: B-665-A-F
+Database: B-677-A-F
+Database: B-681-A-F
+Database: B-694-A-F
+Database: C-10-F
+Database: C-131-F
+Database: C-60-F
+Database: C-81-F
+Database: D-158-F
+Database: D-176-F
+Database: D-73-F
+Database: E-26-F
+Database: E-26-B-F
+Database: E-5-F
+Database: MA-1-B-F
+Database: MA-1-B-F
+Database: MA-6-F
+Database: MA-7-F
