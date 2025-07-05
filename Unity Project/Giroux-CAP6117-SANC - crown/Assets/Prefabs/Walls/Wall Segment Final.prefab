@@ -113,13 +113,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9345e8e7e90745940b5c1cceea4d19ef, type: 2}
     - target: {fileID: 919132149155446097, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
       propertyPath: m_Name
       value: wallPostBall
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.727
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdd57ae5feb3f9b4ca422cc452412319, type: 3}
@@ -179,9 +191,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9345e8e7e90745940b5c1cceea4d19ef, type: 2}
     - target: {fileID: 919132149155446097, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
       propertyPath: m_Name
       value: wall_segment (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ca137a63a2013c4989747ac464ca617, type: 3}
