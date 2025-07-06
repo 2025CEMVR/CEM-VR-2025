@@ -7108,7 +7108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b5689fbd55cc64e93fde7ea5785d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrSimulator: {fileID: 0}
+  xrSimulator: {fileID: 822705285}
 --- !u!1001 &238686201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33498,7 +33498,12 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818057698}
-  m_Mesh: {fileID: 1180252398170373787, guid: 7ea6523bbbaf23141a5c50089bdc9d54, type: 3}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &822705285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+  m_PrefabInstance: {fileID: 890072512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &826951104
 GameObject:
   m_ObjectHideFlags: 0
