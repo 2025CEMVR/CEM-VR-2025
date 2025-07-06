@@ -25,8 +25,11 @@ public class RayToggler : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
-        activateReference.action.started += ToggleRay;
-        activateReference.action.canceled += ToggleRay;
+        if (activateReference?.action != null)
+        {
+            activateReference.action.started += ToggleRay;
+            activateReference.action.canceled += ToggleRay;
+        }
     }
 
     /// <summary>
@@ -34,8 +37,11 @@ public class RayToggler : MonoBehaviour
     /// </summary>
     private void OnDisable()
     {
-        activateReference.action.started -= ToggleRay;
-        activateReference.action.canceled -= ToggleRay;
+        if (activateReference?.action != null)
+        {
+            activateReference.action.started -= ToggleRay;
+            activateReference.action.canceled -= ToggleRay;
+        }
     }
 
     /// <summary>
@@ -63,15 +69,15 @@ public class RayToggler : MonoBehaviour
     /// </remarks>
     private void ApplyStatus()
     {
-        if (rayInteractor.enabled != isEnabled)
+        if (rayInteractor != null && rayInteractor.enabled != isEnabled)
         {
             rayInteractor.enabled = isEnabled;
         }
-        else
+        
+        if (reticleGO != null)
         {
             // turn off the reticle since Unity failed to do so
             reticleGO.SetActive(false);
         }
     }
-
 }
