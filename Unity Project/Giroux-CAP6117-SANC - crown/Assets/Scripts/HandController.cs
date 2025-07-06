@@ -30,7 +30,17 @@ public class HandController : MonoBehaviour
     /// </summary>
     void Update()
     {
-        hand.SetGrip(controller.selectAction.action.ReadValue<float>());
-        hand.SetTrigger(controller.activateAction.action.ReadValue<float>());
+        if (controller != null && hand != null)
+        {
+            if (controller.selectAction.action != null)
+            {
+                hand.SetGrip(controller.selectAction.action.ReadValue<float>());
+            }
+
+            if (controller.activateAction.action != null)
+            {
+                hand.SetTrigger(controller.activateAction.action.ReadValue<float>());
+            }
+        }
     }
 }
