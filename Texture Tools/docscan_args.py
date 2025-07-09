@@ -41,6 +41,12 @@ def edge(img):
 
 def contour(img, canny, num, num_contours):
     # Make blank image
+    black_mask_value=30
+    upper_bound = np.array([black_mask_value,black_mask_value,black_mask_value])
+    lower_bound = np.array([0,0,0])
+    #Get indicies where black value occurs
+    
+
     blank_img = np.zeros_like(img)
     # Finding contours for the detected edges.
     contours, hierarchy = cv2.findContours(
@@ -51,6 +57,15 @@ def contour(img, canny, num, num_contours):
     # Keeping only the largest detected contour.
     page = sorted(contours, key=cv2.contourArea, reverse=True)[:num_contours]
     con = cv2.drawContours(blank_img, page, -1, (0, 255, 255), 3)
+    
+    #make sure the tombstone is not too dark
+    imgPolyFill=img.copy()
+    imgPolyFill=cv2.drawContours(imgPolyFill,contours,-1,(255,255,255),cv2.FILLED)
+    mask = cv2.inRange(imgPolyFill, lower_bound, upper_bound)
+    img=img.astype(np.float32)
+    img=np.clip(img,0,255).astype(np.uint)
+    img[mask==0]=np.clip(img[mask==0],black_mask_value,255).astype(np.uint)
+
     return con, page
 
 

@@ -199,7 +199,7 @@ def combine_images(
     for f_path, r_path, file_name in overlay_images_info:
         # Reload background for each combination to avoid overlaying on top of previous images
         background = cv2.imread(background_path)
-        
+        mask=None
         for overlay_path, (x, y, w, h) in zip(
             [f_path, r_path] if r_path else [f_path], positions_and_sizes
         ):
@@ -225,8 +225,15 @@ def combine_images(
                 if(not(is_shadowed_image(overlay))):
                     
                     #test
-                    contrast_overlay = auto_balance_brightness_with_boost(overlay,max_gamma=.70)
-                    overlay=cv2.addWeighted(overlay,0.1,contrast_overlay,0.9,1)
+                    overlay=np.clip(overlay, 0, 255).astype(np.float32)
+                    overlay[overlay>black_mask_value]=overlay[overlay>black_mask_value]+((255-(overlay[overlay>black_mask_value]))/5)
+                    overlay=np.clip(overlay, 0, 255).astype(np.uint8)
+                    contrast_overlay = auto_balance_brightness_with_boost(overlay,max_gamma=.10)
+                    overlay=np.clip(overlay, 0, 255).astype(np.float32)
+                    #overlay[overlay>black_mask_value]=overlay[overlay>black_mask_value]+((255-(overlay[overlay>black_mask_value]))/4)
+                    overlay=np.clip(overlay, 0, 255).astype(np.uint8)
+                    overlay=contrast_overlay
+                    #overlay=cv2.addWeighted(overlay,0.3,contrast_overlay,0.7,1)
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_BGR2GRAY) 
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_GRAY2BGR)
                     
@@ -237,6 +244,9 @@ def combine_images(
                     overlay[overlay>black_mask_value]=overlay[overlay>black_mask_value]+((255-(overlay[overlay>black_mask_value]))/2) 
                     overlay=np.clip(overlay, 0, 255).astype(np.uint8)
                     overlay = auto_balance_brightness_with_boost(overlay,max_gamma=19.0)
+                    overlay=np.clip(overlay, 0, 255).astype(np.float32)
+                    overlay[overlay>black_mask_value]=overlay[overlay>black_mask_value]+((255-(overlay[overlay>black_mask_value]))/2)
+                    overlay=np.clip(overlay, 0, 255).astype(np.uint8)
                     overlay=cv2.cvtColor(overlay,cv2.COLOR_BGR2GRAY)
                     
                     
@@ -245,7 +255,11 @@ def combine_images(
                     overlay[overlay>255]=255
                     overlay[overlay<0]=255
                     
-                
+                #Match the background texture to the tombstone photo
+                rounded_overlay=overlay.copy()
+                rounded_overlay-cv2.GaussianBlur(rounded_overlay,(75,75),5,5)
+                rounded_overlay=(np.ceil(rounded_overlay/50.0)*50).astype(np.uint8)
+                background=np.clip(background-((np.average(background)-np.median(rounded_overlay))/2),0,255).astype(np.uint8)
                
                 # Defines the center placement of where the tombstone photo goes on the texture
                 imgShift = abs(int(background.shape[1] / 4 - overlay.shape[1] / 2))
@@ -259,17 +273,25 @@ def combine_images(
                     (imgShift + overlay.shape[0]),
                 ]
 
+                #Area that bounds of the tombstoe image on the background texture
+                
+
                 # Places the front photo on the left side of the texture
                 if overlay_path == f_path:
                     # Overlays the photo while ignoring values in the black mask
                     maskedBackground = background[
                         (imgPos[0]) : (imgPos[2]), (imgPos[0]) : (imgPos[1])
                     ]
-
-                    #maskedBackground[mask == 0] = cv2.addWeighted(overlay[mask == 0],0.7,maskedBackground[mask==0],0.3,0)
+                    
+                    """
+                    ROI=background[0:half_bk_height,0:half_bk_width]
+                    ROI=np.clip(ROI-(np.average(background)-np.median(rounded_overlay)),0,255).astype(np.uint8)
+                    background[0:half_bk_height,0:half_bk_width]=ROI"""
+                    
+                    
                     blended_texture=texture_blend(overlay,maskedBackground)
                     blended_texture=np.clip(blended_texture, 0, 255).astype(np.uint8)
-                    background[(imgPos[0]) : (imgPos[2]), (imgPos[0]) : (imgPos[1])]=cv2.addWeighted(blended_texture,0.9,maskedBackground,0.1,0)
+                    background[(imgPos[0]) : (imgPos[2]), (imgPos[0]) : (imgPos[1])]=blended_texture
 
                 # Places the rear photo on the right side of the texture
                 else:
@@ -278,9 +300,13 @@ def combine_images(
                         (imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])
                     ]
 
+                    """ ROI= background[0:half_bk_height,half_bk_width:]
+                    ROI=np.clip(ROI-(np.average(background)-np.median(rounded_overlay)),0,255).astype(np.uint8)
+                    background[0:half_bk_height,half_bk_width:]=ROI"""
+
                     blended_texture=texture_blend(overlay,maskedBackground)
                     blended_texture=np.clip(blended_texture, 0, 255).astype(np.uint8)
-                    background[(imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])] = cv2.addWeighted(blended_texture,0.9,maskedBackground,0.1,0)
+                    background[(imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])] = blended_texture
 
                     
 
