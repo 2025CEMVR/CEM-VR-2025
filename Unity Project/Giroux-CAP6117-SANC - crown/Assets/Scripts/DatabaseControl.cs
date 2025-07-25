@@ -4,6 +4,7 @@ using SQLiteDatabase;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using System.IO;
 
 ///This is the real one
 /// <summary>
@@ -63,7 +64,12 @@ public class DatabaseControl : MonoBehaviour
     /// </summary>
     public List<string> dbState;
 
-
+    // Debug tracking variables
+    private List<GameObjectLocation> foundLocations = new List<GameObjectLocation>();
+    private List<string> missingGameObjects = new List<string>();
+    private List<string> databaseResults = new List<string>();
+    private Dictionary<string, string> burialIDToName = new Dictionary<string, string>();
+    private bool debugMode = false;
 
     /// <summary>
     /// Holds a reference to the display field for advanced results count.
@@ -495,22 +501,104 @@ public class DatabaseControl : MonoBehaviour
     /// <param name="tStr"></param>
     public void RunQuery(string tStr)
     {
+        // Check if this is an Air Force query for debugging (handle both = and == operators)
+        debugMode = tStr.Contains("brnAF = '1'") || tStr.Contains("brnAF == '1'");
+        
+        // Always log the query string for debugging
+        Debug.Log($"=== QUERY DEBUG ===");
+        Debug.Log($"Query string: {tStr}");
+        Debug.Log($"Contains 'brnAF = '1'': {tStr.Contains("brnAF = '1'")}");
+        Debug.Log($"Contains 'brnAF == '1'': {tStr.Contains("brnAF == '1'")}");
+        Debug.Log($"Debug mode: {debugMode}");
+
+        if (debugMode)
+        {
+            Debug.Log("=== IN-GAME AIR FORCE QUERY DEBUG ===");
+            Debug.Log($"Query: {tStr}");
+            foundLocations.Clear();
+            missingGameObjects.Clear();
+            databaseResults.Clear();
+            burialIDToName.Clear();
+        }
+
         // process the incoming query
         allIDs.Clear();
 
         DBReader reader = db.Select(tStr);
         while (reader != null && reader.Read())
         {
+            string burialID = reader.GetStringValue("burialID");
+            string firstName = reader.GetStringValue("firstName");
+            string lastName = reader.GetStringValue("lastName");
+            string section = reader.GetStringValue("section");
+            string site = reader.GetStringValue("site");
+            
+            databaseResults.Add(burialID);
+            
+            if (debugMode)
+            {
+                burialIDToName[burialID] = $"{firstName} {lastName}";
+                Debug.Log($"Database Record: {burialID} - {firstName} {lastName} ({section}-{site})");
+            }
+            
             // look for the game object associated with this headstone
             // not all may exist in the scene yet
-            GameObject hsgo = GameObject.Find(reader.GetStringValue("burialID"));
+            GameObject hsgo = GameObject.Find(burialID);
             if (hsgo is not null)
             {
                 // add this headstone to the list of IDs
-                allIDs.Add(reader.GetStringValue("burialID"));
+                allIDs.Add(burialID);
                 // add it to the coroutine queue
                 headstoneQueue.Enqueue(hsgo);
+                
+                if (debugMode)
+                {
+                    Debug.Log($"✅ Found GameObject: {burialID} - {firstName} {lastName}");
+                }
+
+                if (debugMode)
+                {
+                    // Get detailed location information
+                    GameObjectLocation location = new GameObjectLocation
+                    {
+                        burialID = burialID,
+                        sceneName = hsgo.scene.name,
+                        position = hsgo.transform.position,
+                        parentName = hsgo.transform.parent != null ? hsgo.transform.parent.name : "None",
+                        hierarchyPath = GetGameObjectPath(hsgo),
+                        isActive = hsgo.activeInHierarchy,
+                        layer = LayerMask.LayerToName(hsgo.layer)
+                    };
+                    foundLocations.Add(location);
+
+                    Debug.Log($"   Scene: {location.sceneName}");
+                    Debug.Log($"   Position: {location.position}");
+                    Debug.Log($"   Parent: {location.parentName}");
+                    Debug.Log($"   Path: {location.hierarchyPath}");
+                    Debug.Log($"   Active: {location.isActive}");
+                    Debug.Log($"   Layer: {location.layer}");
+                }
             }
+            else
+            {
+                if (debugMode)
+                {
+                    missingGameObjects.Add(burialID);
+                    Debug.Log($" Missing GameObject: {burialID} - {firstName} {lastName}");
+                }
+            }
+        }
+
+        if (debugMode)
+        {
+            Debug.Log($"=== IN-GAME QUERY RESULTS ===");
+            Debug.Log($"Total Database Records: {databaseResults.Count}");
+            Debug.Log($"Found GameObjects: {foundLocations.Count}");
+            Debug.Log($"Missing GameObjects: {missingGameObjects.Count}");
+            Debug.Log($"Match Rate: {(foundLocations.Count * 100.0f / databaseResults.Count):F1}%");
+
+            // Export results to text file
+            ExportInGameResultsToFile();
         }
 
         //Process the results of the query in a coroutine
@@ -528,18 +616,113 @@ public class DatabaseControl : MonoBehaviour
         return;
     }
 
+    private string GetGameObjectPath(GameObject obj)
+    {
+        string path = obj.name;
+        Transform parent = obj.transform.parent;
+
+        while (parent != null)
+        {
+            path = parent.name + "/" + path;
+            parent = parent.parent;
+        }
+
+        return path;
+    }
+
+    private void ExportInGameResultsToFile()
+    {
+        try
+        {
+            string timestamp = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+            string fileName = $"InGame_AirForce_Query_{timestamp}.txt";
+            string filePath = Path.Combine(Application.dataPath, "..", "Debug_Exports", fileName);
+
+            // Ensure directory exists
+            Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine("=== IN-GAME AIR FORCE QUERY RESULTS ===");
+                writer.WriteLine($"Timestamp: {System.DateTime.Now}");
+                writer.WriteLine($"Total Database Records: {databaseResults.Count}");
+                writer.WriteLine($"Found GameObjects: {foundLocations.Count}");
+                writer.WriteLine($"Missing GameObjects: {missingGameObjects.Count}");
+                writer.WriteLine($"Match Rate: {(foundLocations.Count * 100.0f / databaseResults.Count):F1}%");
+                writer.WriteLine();
+
+                writer.WriteLine("=== FOUND GAMEOBJECTS ===");
+                foreach (var location in foundLocations)
+                {
+                    writer.WriteLine($"BurialID: {location.burialID}");
+                    writer.WriteLine($"  Scene: {location.sceneName}");
+                    writer.WriteLine($"  Position: {location.position}");
+                    writer.WriteLine($"  Parent: {location.parentName}");
+                    writer.WriteLine($"  Hierarchy Path: {location.hierarchyPath}");
+                    writer.WriteLine($"  Active: {location.isActive}");
+                    writer.WriteLine($"  Layer: {location.layer}");
+                    writer.WriteLine();
+                }
+
+                writer.WriteLine("=== MISSING GAMEOBJECTS ===");
+                foreach (string missingID in missingGameObjects)
+                {
+                    writer.WriteLine($" {missingID}");
+                }
+
+                writer.WriteLine();
+                writer.WriteLine("=== DATABASE RECORDS ===");
+                foreach (string burialID in databaseResults)
+                {
+                    writer.WriteLine($"Database: {burialID}");
+                }
+            }
+
+            Debug.Log($"In-game results exported to: {filePath}");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Failed to export in-game results: {e.Message}");
+        }
+    }
+
     //Processes the query results as a coroutine
     private IEnumerator runQueryCoroutine()
     {
         int counter = 0;
         isProcessing = true;
+        
+        if (debugMode)
+        {
+            Debug.Log($"=== COROUTINE DEBUG ===");
+            Debug.Log($"Headstone queue count: {headstoneQueue.Count}");
+            Debug.Log($"AllIDs count: {allIDs.Count}");
+        }
+        
         while (headstoneQueue.Count > 0)
         {
             GameObject next = headstoneQueue.Dequeue();
             Debug.Log("PUMPKIN: " + next.gameObject.name);
+            
+            if (debugMode)
+            {
+                Debug.Log($"Processing headstone {counter + 1}: {next.gameObject.name}");
+                
+                // Get the person name from the dictionary
+                string personName = burialIDToName.ContainsKey(next.gameObject.name) ? burialIDToName[next.gameObject.name] : "Unknown";
+                Debug.Log($"Processing: {next.gameObject.name} - {personName}");
+            }
+            
             // set the logo button and pointer to active for both levels of detail
             Transform child = next.transform.Find("LogoButton0");
-            if (child == null) continue;
+            if (child == null) 
+            {
+                if (debugMode)
+                {
+                    Debug.LogWarning($"LogoButton0 not found for {next.gameObject.name}");
+                }
+                continue;
+            }
             next.transform.Find("LogoButton0").gameObject.SetActive(true);
             next.transform.Find("LogoButton1").gameObject.SetActive(true);
 
@@ -573,6 +756,13 @@ public class DatabaseControl : MonoBehaviour
             }
 
             yield return null;
+        }
+
+        if (debugMode)
+        {
+            Debug.Log($"=== COROUTINE COMPLETE ===");
+            Debug.Log($"Total headstones processed: {counter}");
+            Debug.Log($"Expected from allIDs: {allIDs.Count}");
         }
 
         // allow reset and pointer toggle to be enabled
@@ -927,10 +1117,15 @@ public class DatabaseControl : MonoBehaviour
                         if (valueContent == item.Value.ToString())
                         {
                             // the value content will be 1 regardless of whether 
-                            // looking for equals or not equals
                             valueContent = "1";
                             fieldName = "brn" + item.Key.ToString();
                             queryStr += fieldName;
+                            
+                            // If this is an Air Force query, include name fields for debugging
+                            if (fieldName == "brnAF")
+                            {
+                                queryStr = "select burialID, firstName, lastName, section, site from cemVRburials where " + fieldName;
+                            }
                             break;
                         }
                     }
