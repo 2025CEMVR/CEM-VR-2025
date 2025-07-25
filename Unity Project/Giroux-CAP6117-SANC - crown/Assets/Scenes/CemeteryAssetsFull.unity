@@ -256206,6 +256206,7 @@ GameObject:
   - component: {fileID: 6168086712993040450}
   - component: {fileID: 1798382371166208383}
   - component: {fileID: 5439287502560806098}
+  - component: {fileID: 6168086712993040451}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -257952,6 +257953,7 @@ GameObject:
   - component: {fileID: 4764846227845789306}
   - component: {fileID: 1102382952336441159}
   - component: {fileID: 6684867296567081706}
+  - component: {fileID: 6684867296567081707}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -261157,6 +261159,20 @@ Transform:
   m_Father: {fileID: 1167533138079110407}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6168086712993040451
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448277389022782243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3796581
+  m_Height: 2.9398756
+  m_Direction: 1
+  m_Center: {x: 0.008845777, y: 0.061770115, z: 0.05281916}
 --- !u!1 &6178363393547849586
 GameObject:
   m_ObjectHideFlags: 0
@@ -261253,6 +261269,7 @@ GameObject:
   - component: {fileID: 3306622224547094914}
   - component: {fileID: 6957826638304553151}
   - component: {fileID: 3676681540639698194}
+  - component: {fileID: 6957826638304553152}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -261271,6 +261288,7 @@ GameObject:
   - component: {fileID: 3303446679771299915}
   - component: {fileID: 6968302631103514998}
   - component: {fileID: 3692241710457048283}
+  - component: {fileID: 6968302631103514999}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -261373,6 +261391,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6684867296567081707
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3910064666634132763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33699548
+  m_Height: 2.9398754
+  m_Direction: 1
+  m_Center: {x: 0.03499154, y: 0.06177004, z: -0.04240835}
 --- !u!4 &6693009661051108800
 Transform:
   m_ObjectHideFlags: 0
@@ -261837,6 +261869,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6449170179667102435}
   m_Mesh: {fileID: 1452959411066273850, guid: 1d4740fe8b5d17e4f8ed9e3ee7471f9d, type: 3}
+--- !u!136 &6957826638304553152
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449170179667102435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.27257487
+  m_Height: 2.9398754
+  m_Direction: 1
+  m_Center: {x: -0.020438556, y: 0.061770063, z: -0.020932106}
 --- !u!33 &6968302631103514998
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -261845,6 +261891,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6465838928860900138}
   m_Mesh: {fileID: 1452959411066273850, guid: 1d4740fe8b5d17e4f8ed9e3ee7471f9d, type: 3}
+--- !u!136 &6968302631103514999
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6465838928860900138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2839469
+  m_Height: 2.3792229
+  m_Direction: 1
+  m_Center: {x: 0.010135412, y: 0.5990507, z: 0.002666048}
 --- !u!65 &6971659933424452475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -264548,6 +264608,7 @@ GameObject:
   - component: {fileID: 356054154525361883}
   - component: {fileID: 5304295122578919398}
   - component: {fileID: 1879615508791380555}
+  - component: {fileID: 8111968240879168955}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -264555,6 +264616,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &8111968240879168955
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111968240879168954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28893822
+  m_Height: 2.4
+  m_Direction: 1
+  m_Center: {x: -0.015405215, y: 0.061770014, z: -0.030658856}
 --- !u!1 &8191897972921017300
 GameObject:
   m_ObjectHideFlags: 0
@@ -265102,6 +265177,7 @@ GameObject:
   - component: {fileID: 986302805715602126}
   - component: {fileID: 4673711940764713971}
   - component: {fileID: 1393094599760430686}
+  - component: {fileID: 8778492393268011440}
   m_Layer: 0
   m_Name: OBJ_CL04_CalocedrusDecurrens_2.002
   m_TagString: Untagged
@@ -265109,6 +265185,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &8778492393268011440
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778492393268011439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28814554
+  m_Height: 2.9398756
+  m_Direction: 1
+  m_Center: {x: -0.009056986, y: 0.06177005, z: -0.037945796}
 --- !u!4 &8855386803619866040
 Transform:
   m_ObjectHideFlags: 0
