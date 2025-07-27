@@ -98,6 +98,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d3b1303e10b971f4686ae19d8fbbc5f1, type: 2}
+    - target: {fileID: -2021178655527167927, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -447275898630060098, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
       propertyPath: m_Name
       value: Red Rose
@@ -105,6 +113,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4436805663696350335, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
@@ -134,20 +146,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!64 &1008642660
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2968660302584935481}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6053382344825935911, guid: 23e715d8131c8384cbcc1542c124fe01, type: 3}
 --- !u!114 &1008642659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,3 +261,17 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!136 &3529060691160364990
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968660302584935481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.00018369655
+  m_Height: 0.0034525944
+  m_Direction: 1
+  m_Center: {x: 0.00031442678, y: -0.0009999999, z: 0.0021234676}
