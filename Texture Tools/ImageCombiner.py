@@ -258,8 +258,11 @@ def combine_images(
                 #Match the background texture to the tombstone photo
                 rounded_overlay=overlay.copy()
                 rounded_overlay-cv2.GaussianBlur(rounded_overlay,(75,75),5,5)
-                rounded_overlay=(np.ceil(rounded_overlay/50.0)*50).astype(np.uint8)
-                background=np.clip(background-((np.average(background)-np.median(rounded_overlay))/2),0,255).astype(np.uint8)
+                rounded_overlay=rounded_overlay[overlay>black_mask_value]
+                rounded_overlay=(np.ceil(rounded_overlay/20.0)*20).astype(np.uint8)
+                sorted_pixels = np.sort(rounded_overlay, axis=None)
+                background=np.clip(background-((np.average(background)-np.median(sorted_pixels))/2),0,255).astype(np.uint8)
+                
                
                 # Defines the center placement of where the tombstone photo goes on the texture
                 imgShift = abs(int(background.shape[1] / 4 - overlay.shape[1] / 2))

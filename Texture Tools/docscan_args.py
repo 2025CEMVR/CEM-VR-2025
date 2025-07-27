@@ -251,7 +251,7 @@ img_result = perspective(orig_img, img_corners, dest_corners)
 
 # Crop areas off pure black
 img_result = cropBlack(img_result)
-img_result=cv2.copyMakeBorder(img_result,100,100,100,100, cv2.BORDER_CONSTANT,value=[0,0,0])
+img_result=cv2.copyMakeBorder(img_result,50,50,50,50, cv2.BORDER_CONSTANT,value=[0,0,0])
 
 # ---OUTPUT---
 # Output the image to the current directory.
