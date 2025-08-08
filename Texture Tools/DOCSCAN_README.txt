@@ -1,23 +1,27 @@
 REQUIREMENTS
 In one directory have the following:
 Given Files:
+- Run_texture_creator.ipynb
 - run_doscan.py
 - docscan_args.py
 - check_boxes.py
 - ImageCombiner.py
 - plainHeadstone.jpg (A necessity for the ImageCombiner)
+
 Your Files:
-- a bounding box file from the AI model (Optional)
-- a folder with your images to be turned into textures.
+- A folder named "images" with your MASKED images to be turned into textures. (The masked image must use pure black to and result in a headstone silhouette that bounds a skewed rectangle/square)
 
 
 RUNNING THE TOOL
 There are two ways to run the tool:
-python ./run_docscan <input_folder> <bounding_box_file>
-- Runs a check on the bounding box file to account for certain errors.
-- Then runs a background cut based on the bounding box file (Sends output to a folder named "Standard_Output" or "Dynamic_Output" based on whether each input image was marked as a standard upright headstone or not in the bounding box file.
-- Then creates textures based on the "Standard_Output" folder. (Sends textures to a folder named "Textures")
-python ./run_docscan.py <input_folder>
-- Runs a rudimentary background cut on all images. (Send output to a folder named "Output")
-- Then attempts to texturize ALL images. (Sends textures to a folder named "Textures")
-python ./run_docscan.py images
+
+1. Run the following command indicated after the arrow in windows command prompt ------> python ./run_docscan images
+	-This is useful for debugging as the code will print the process of automated texturing.
+
+2. Or run the Python Journal "Run_texture_creator" by opening the file and following the specified instructions for either Windows or MAC PCs
+
+*******************************************************************************************************************
+
+The process starts off by creating an "output" folder with flattened photos. 
+This is done so the user can look for photos with any defects so they can be reprocessed after changes are made. 
+The "finalTexture" folder contains all final textures that can be used in a 3D environment.
