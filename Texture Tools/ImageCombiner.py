@@ -258,8 +258,11 @@ def combine_images(
                 #Match the background texture to the tombstone photo
                 rounded_overlay=overlay.copy()
                 rounded_overlay-cv2.GaussianBlur(rounded_overlay,(75,75),5,5)
-                rounded_overlay=(np.ceil(rounded_overlay/50.0)*50).astype(np.uint8)
-                background=np.clip(background-((np.average(background)-np.median(rounded_overlay))/2),0,255).astype(np.uint8)
+                rounded_overlay=rounded_overlay[overlay>black_mask_value]
+                rounded_overlay=(np.ceil(rounded_overlay/20.0)*20).astype(np.uint8)
+                sorted_pixels = np.sort(rounded_overlay, axis=None)
+                background=np.clip(background-((np.average(background)-np.median(sorted_pixels))/2),0,255).astype(np.uint8)
+                
                
                 # Defines the center placement of where the tombstone photo goes on the texture
                 imgShift = abs(int(background.shape[1] / 4 - overlay.shape[1] / 2))
@@ -282,13 +285,7 @@ def combine_images(
                     maskedBackground = background[
                         (imgPos[0]) : (imgPos[2]), (imgPos[0]) : (imgPos[1])
                     ]
-                    
-                    """
-                    ROI=background[0:half_bk_height,0:half_bk_width]
-                    ROI=np.clip(ROI-(np.average(background)-np.median(rounded_overlay)),0,255).astype(np.uint8)
-                    background[0:half_bk_height,0:half_bk_width]=ROI"""
-                    
-                    
+                   
                     blended_texture=texture_blend(overlay,maskedBackground)
                     blended_texture=np.clip(blended_texture, 0, 255).astype(np.uint8)
                     background[(imgPos[0]) : (imgPos[2]), (imgPos[0]) : (imgPos[1])]=blended_texture
@@ -300,24 +297,18 @@ def combine_images(
                         (imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])
                     ]
 
-                    """ ROI= background[0:half_bk_height,half_bk_width:]
-                    ROI=np.clip(ROI-(np.average(background)-np.median(rounded_overlay)),0,255).astype(np.uint8)
-                    background[0:half_bk_height,half_bk_width:]=ROI"""
+                   
 
                     blended_texture=texture_blend(overlay,maskedBackground)
                     blended_texture=np.clip(blended_texture, 0, 255).astype(np.uint8)
                     background[(imgPos[0]) : (imgPos[2]), (-imgPos[1]) : (-imgPos[0])] = blended_texture
 
-                    
 
                 print(f"Combining: {os.path.basename(overlay_path)} onto background")
         background=np.clip(background, 0, 255).astype(np.float32)
         background-=30
         background=np.clip(background, 0, 255).astype(np.uint8)
-        # Resize Texture
-        # background = cv2.resize(background, (resolution, resolution))
-        # print(f"Resizing: {file_name} to be {resolution}x{resolution}")
-
+       
         # Save the combined image with the new naming convention, ensuring no extra dashes
         output_path = os.path.join(output_directory, f"{file_name}.png")
         cv2.imwrite(output_path, background)
